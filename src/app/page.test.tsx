@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react'
 import Home from './page'
 
 describe('<Home />', () => {
-  describe('should not render a link twice to avoid a bad copy and paste', () => {
+  describe('should not render a link twice to avoid a bad copy and paste and all links should be opened in new tab', () => {
     render(<Home />)
     const allLinks = screen.getAllByRole('link') as HTMLAnchorElement[]
     const alreadyParsedLinks: Record<string, boolean> = {}
@@ -14,6 +14,7 @@ describe('<Home />', () => {
       it(`${linkElement.href}`, () => {
         expect(linkElement.href).not.toContain('localhost')
         expect(alreadyParsedLinks[linkElement.href]).toBeUndefined()
+        expect(linkElement.target).toBe('_blank')
         alreadyParsedLinks[linkElement.href] = true
       })
     })
