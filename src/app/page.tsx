@@ -23,7 +23,7 @@ export default function Home() {
         </a>
       </header>
 
-      <main className="flex flex-col items-center justify-between gap-24 px-4 py-24 text-center text-3xl font-light md:px-16 lg:m-auto lg:max-w-screen-lg">
+      <main className="flex flex-col items-center justify-between gap-12 px-4 py-4 text-center text-xl font-light sm:gap-24 sm:py-24 sm:text-2xl md:px-16 md:text-3xl lg:m-auto lg:max-w-screen-lg">
         <div>
           <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
             <Image
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </div>
         <section>
-          <h2 className="mb-8 text-5xl font-medium">Hi! I&apos;m Kevin,</h2>
+          <h1 className="mb-8 text-4xl font-medium sm:text-5xl">Hi! I&apos;m Kevin,</h1>
           <p className="leading-normal">
             a dedicated <strong className="font-semibold">Senior Frontend Developer</strong> who
             works as a <strong className="font-semibold">Freelancer</strong> in Switzerland.
@@ -53,7 +53,7 @@ export default function Home() {
           </p>
         </section>
         <section>
-          <h3 className="mb-8 text-4xl font-medium">What I love</h3>
+          <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">What I love</h2>
           <ul className="text-left ">
             <li>
               <span className="font-medium">I love</span>{' '}
@@ -86,15 +86,15 @@ export default function Home() {
           </ul>
         </section>
         <section>
-          <h3 className="mb-8 text-4xl font-medium">Tools</h3>
-          <h4 className="mb-8 text-3xl font-medium">Tools I love the most</h4>
+          <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">Tools</h2>
+          <h3 className="mb-8 text-2xl font-medium sm:text-3xl">Tools I love the most</h3>
           <ul className="flex flex-wrap justify-center gap-4">
             <ToolItem name="TypeScript" href="https://www.typescriptlang.org/" />
             <ToolItem name="tanstack/react-query" href="https://tanstack.com/query" />
             <ToolItem name="(React) Testing Library" href="https://testing-library.com/" />
             <ToolItem name="ESLint" href="https://eslint.org/" />
           </ul>
-          <h4 className="mb-8 mt-16 text-3xl font-medium">Other tools I use</h4>
+          <h3 className="mb-8 mt-16 text-2xl font-medium sm:text-3xl">Other tools I use</h3>
           <ul className="flex flex-wrap justify-center gap-4">
             <ToolItem name="Next.js" href="https://nextjs.org/" />
             <ToolItem name="React" href="https://react.dev/" />
@@ -121,9 +121,9 @@ export default function Home() {
             <ToolItem name="Google Analytics" href="https://analytics.google.com/" />
             <ToolItem name="Launchdarkly" href="https://launchdarkly.com/" />
           </ul>
-          <h4 className="mb-8 mt-16 text-3xl font-medium">
+          <h3 className="mb-8 mt-16 text-2xl font-medium sm:text-3xl">
             Tools I would love to use more regularly
-          </h4>
+          </h3>
           <ul className="flex flex-wrap justify-center gap-4">
             <ToolItem name="GraphQL" href="https://graphql.org/" />
             <ToolItem name="Tailwind" href="https://tailwindcss.com/" />
@@ -131,129 +131,149 @@ export default function Home() {
           </ul>
         </section>
         <section>
-          <h3 className="mb-8 text-4xl font-medium">Where I get my inspiration from</h3>
+          <h2 className="mb-4 text-4xl font-medium sm:mb-8 sm:text-3xl">
+            Where I get my inspiration from
+          </h2>
           <ul className="text-left ">
-            <li>
-              <a
-                href="https://kentcdodds.com/blog"
-                className="text-cyan-800 hover:opacity-70"
-                target="_blank"
-              >
-                <Image
-                  src="/at-solid.svg"
-                  alt="Internet icon"
-                  className="mr-2 inline"
-                  width={40}
-                  height={40}
-                />
-                Kent C. Dodds
-              </a>{' '}
-              <span className="text-2xl">(he loves clean code and testing as much as I do)</span>
+            <li className="flex">
+              <Image
+                src="/at-solid.svg"
+                alt="Internet icon"
+                className="mr-2 h-7 w-7 sm:h-9 sm:w-9"
+                width={1}
+                height={1}
+              />
+              <span>
+                <a
+                  href="https://kentcdodds.com/blog"
+                  className="text-cyan-800 hover:opacity-70"
+                  target="_blank"
+                >
+                  Kent C. Dodds
+                </a>{' '}
+                <span className="text-lg sm:text-2xl">
+                  (he loves clean code and testing as much as I do)
+                </span>
+              </span>
             </li>
-            <li>
-              <a
-                href="https://www.youtube.com/@mattpocockuk"
-                className="text-cyan-800 hover:opacity-70"
-                target="_blank"
-              >
-                <Image
-                  src="/youtube.svg"
-                  alt="Youtube icon"
-                  className="mr-2 inline"
-                  width={40}
-                  height={40}
-                />
-                Matt Pocock
-              </a>{' '}
-              <span className="text-2xl">(a TypeScript genius)</span>
+            <li className="flex align-top">
+              <Image
+                src="/youtube.svg"
+                alt="Youtube icon"
+                className="mr-2 h-7 w-7 sm:h-9 sm:w-9"
+                width={1}
+                height={1}
+              />
+              <span>
+                <a
+                  href="https://www.youtube.com/@mattpocockuk"
+                  className="text-cyan-800 hover:opacity-70"
+                  target="_blank"
+                >
+                  Matt Pocock
+                </a>{' '}
+                <span className="text-lg sm:text-2xl">(a TypeScript genius)</span>
+              </span>
             </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UC-8QAzbLcRglXeN_MY9blyw"
-                className="text-cyan-800 hover:opacity-70"
-                target="_blank"
-              >
-                <Image
-                  src="/youtube.svg"
-                  alt="Youtube icon"
-                  className="mr-2 inline"
-                  width={40}
-                  height={40}
-                />
-                Ben Awad
-              </a>{' '}
-              <span className="text-2xl">(for the humor and in depth tutorials)</span>
+            <li className="flex align-top">
+              <Image
+                src="/youtube.svg"
+                alt="Youtube icon"
+                className="mr-2 h-7 w-7 sm:h-9 sm:w-9"
+                width={1}
+                height={1}
+              />
+              <span>
+                <a
+                  href="https://www.youtube.com/channel/UC-8QAzbLcRglXeN_MY9blyw"
+                  className="text-cyan-800 hover:opacity-70"
+                  target="_blank"
+                >
+                  Ben Awad
+                </a>{' '}
+                <span className="text-lg sm:text-2xl">(for the humor and in depth tutorials)</span>
+              </span>
             </li>
-            <li>
-              <a
-                href="https://www.youtube.com/@Fireship"
-                className="text-cyan-800 hover:opacity-70"
-                target="_blank"
-              >
-                <Image
-                  src="/youtube.svg"
-                  alt="Youtube icon"
-                  className="mr-2 inline"
-                  width={40}
-                  height={40}
-                />
-                Fireship
-              </a>{' '}
-              <span className="text-2xl">(the more humor the better)</span>
+            <li className="flex align-top">
+              <Image
+                src="/youtube.svg"
+                alt="Youtube icon"
+                className="mr-2 h-7 w-7 sm:h-9 sm:w-9"
+                width={1}
+                height={1}
+              />
+              <span>
+                <a
+                  href="https://www.youtube.com/@Fireship"
+                  className="text-cyan-800 hover:opacity-70"
+                  target="_blank"
+                >
+                  Fireship
+                </a>{' '}
+                <span className="text-lg sm:text-2xl">(the more humor the better)</span>
+              </span>
             </li>
-            <li>
-              <a
-                href="https://www.youtube.com/@TraversyMedia"
-                className="text-cyan-800 hover:opacity-70"
-                target="_blank"
-              >
-                <Image
-                  src="/youtube.svg"
-                  alt="Youtube icon"
-                  className="mr-2 inline"
-                  width={40}
-                  height={40}
-                />
-                TraversyMedia
-              </a>{' '}
-              <span className="text-2xl">(very detailed tutorials)</span>
+            <li className="flex align-top">
+              <Image
+                src="/youtube.svg"
+                alt="Youtube icon"
+                className="mr-2 h-7 w-7 sm:h-9 sm:w-9"
+                width={1}
+                height={1}
+              />
+              <span>
+                <a
+                  href="https://www.youtube.com/@TraversyMedia"
+                  className="text-cyan-800 hover:opacity-70"
+                  target="_blank"
+                >
+                  TraversyMedia
+                </a>{' '}
+                <span className="text-lg sm:text-2xl">(very detailed tutorials)</span>
+              </span>
             </li>
-            <li>
-              <a
-                href="https://reactnewsletter.com/"
-                className="text-cyan-800 hover:opacity-70"
-                target="_blank"
-              >
-                <Image
-                  src="/envelope.svg"
-                  alt="Email icon"
-                  className="mr-2 inline"
-                  width={40}
-                  height={40}
-                />
-                React Newsletter
-              </a>
+            <li className="flex align-top">
+              <Image
+                src="/envelope.svg"
+                alt="Email icon"
+                className="mr-2 h-7 w-7 sm:h-9 sm:w-9"
+                width={1}
+                height={1}
+              />
+              <span>
+                <a
+                  href="https://reactnewsletter.com/"
+                  className="text-cyan-800 hover:opacity-70"
+                  target="_blank"
+                >
+                  React Newsletter
+                </a>
+              </span>
             </li>
-            <li>
-              <a
-                href="https://bytes.dev/"
-                className="text-cyan-800 hover:opacity-70"
-                target="_blank"
-              >
-                <Image
-                  src="/envelope.svg"
-                  alt="Email icon"
-                  className="mr-2 inline"
-                  width={40}
-                  height={40}
-                />
-                Bytes Newsletter
-              </a>
+            <li className="flex align-top">
+              <Image
+                src="/envelope.svg"
+                alt="Email icon"
+                className="mr-2 h-7 w-7 sm:h-9 sm:w-9"
+                width={1}
+                height={1}
+              />
+              <span>
+                <a
+                  href="https://bytes.dev/"
+                  className="text-cyan-800 hover:opacity-70"
+                  target="_blank"
+                >
+                  Bytes Newsletter
+                </a>
+              </span>
             </li>
           </ul>
         </section>
         <section>
-          <h3 className="mb-8 text-4xl font-medium">Books that have shaped me as a programmer</h3>
+          <h2 className="mb-4 text-4xl font-medium sm:mb-8 sm:text-3xl">
+            Books that have shaped me as a programmer
+          </h2>
           <ul>
             <li>
               <a
@@ -262,7 +282,7 @@ export default function Home() {
                 target="_blank"
               >
                 The Clean Coder:{' '}
-                <span className="text-2xl">
+                <span className="text-lg sm:text-2xl">
                   A Code of Conduct for Professional Programmers
                   <br />
                   (Robert C. Martin)
@@ -272,22 +292,24 @@ export default function Home() {
           </ul>
         </section>
         <section>
-          <h3 className="mb-8 text-4xl font-medium">What others say about me</h3>
-          <blockquote className="inline-block w-auto rounded-md bg-[#ccc] p-3 font-thin italic">
+          <h2 className="mb-4 text-4xl font-medium sm:mb-8 sm:text-3xl">
+            What others say about me
+          </h2>
+          <blockquote className="inline-block w-auto rounded-md border-2 border-solid border-neutral-200 bg-[#ccc] p-3 font-thin italic">
             &quot;He is so effective, I suspect that they are 2 Kevins&quot;
           </blockquote>
-          <figcaption className="mb-12 text-2xl">
+          <figcaption className="mb-12 text-lg sm:text-2xl">
             (Benoît, senior developer and former colleague)
           </figcaption>
-          <blockquote className="inline-block w-auto rounded-md bg-[#ccc] p-3 font-thin italic">
+          <blockquote className="inline-block w-auto rounded-md border-2 border-solid border-neutral-200 bg-[#ccc] p-3 font-thin italic">
             &quot;I would lead a war in the company to have you back as an engineer&quot;
           </blockquote>
-          <figcaption className="mb-12 text-2xl">
+          <figcaption className="mb-12 text-lg sm:text-2xl">
             (Jeremy, senior developer and my former manager)
           </figcaption>
         </section>
         <section>
-          <h3 className="mb-8 text-4xl font-medium">You need more infos?</h3>
+          <h2 className="mb-4 text-4xl font-medium sm:mb-8 sm:text-3xl">You need more infos?</h2>
           <p>
             Look at my full CV on{' '}
             <a
