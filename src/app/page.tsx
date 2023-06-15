@@ -8,7 +8,7 @@ export default function Home() {
         <a
           title="LinkedIn"
           href="https://www.linkedin.com/in/kevin-herklotz-70407a153/"
-          className="text-cyan-800 hover:opacity-70"
+          className="hover:opacity-70"
           target="_blank"
         >
           <Image src="/linkedin.svg" alt="Linkedin icon" width={22} height={22} />
@@ -16,20 +16,20 @@ export default function Home() {
         <a
           title="Github"
           href="https://github.com/KevinHerklotz/"
-          className="text-cyan-800 hover:opacity-70"
+          className="hover:opacity-70"
           target="_blank"
         >
           <Image src="/github.svg" alt="Github icon" width={22} height={22} />
         </a>
       </header>
 
-      <main className="flex flex-col items-center justify-between gap-12 px-4 py-4 text-center text-xl font-light sm:gap-24 sm:py-24 sm:text-2xl md:px-16 md:text-3xl lg:m-auto lg:max-w-screen-lg">
+      <main className="mb-12 flex flex-col items-center justify-between gap-12 px-4 py-4 text-center text-xl font-light sm:gap-24 sm:py-16 sm:text-2xl md:px-16 md:text-3xl lg:m-auto lg:max-w-screen-lg">
         <div>
-          <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
+          <div className="relative flex place-items-center before:absolute before:-z-20 before:h-[300px] before:w-[480px] before:-translate-y-1/2 before:rounded-full before:bg-gradient-radial before:from-orange-50 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-y-1/3 after:bg-gradient-radial after:from-sky-100 after:via-blue-50 after:blur-3xl after:content-[''] before:lg:h-[360px]">
             <Image
               src="https://avatars.githubusercontent.com/u/9254854"
               alt="picture of myself"
-              className="border-1 -mb-6 rounded-full border-solid border-orange-900/25 drop-shadow-md"
+              className="border-1 -mb-6 h-40 w-40 rounded-full border-solid border-orange-900/25 drop-shadow-md sm:h-[250px] sm:w-[250px]"
               width={250}
               height={250}
               priority
@@ -43,7 +43,7 @@ export default function Home() {
             works as a <strong className="font-semibold">Freelancer</strong> in Switzerland.
             I&apos;m very experienced in e-commerce business, having worked for{' '}
             <a
-              className="text-cyan-800 hover:opacity-70"
+              className="text-cyan-700 hover:opacity-70"
               href="https://www.ricardo.ch"
               target="_blank"
             >
@@ -65,7 +65,7 @@ export default function Home() {
             </li>
             <li>
               <span className="font-medium">I love</span> to do{' '}
-              <span className="text-red-900">reviews</span>. (It helps me and others to grow)
+              <span className="text-red-900">reviews</span> (It helps me and others to grow).
             </li>
             <li>
               <span className="font-medium">I love</span> to set up and use{' '}
@@ -103,6 +103,10 @@ export default function Home() {
             <ToolItem name="Storybook" href="https://storybook.js.org/" />
             <ToolItem name="Material-UI" href="https://mui.com/" />
             <ToolItem name="SCSS" href="https://sass-lang.com/" />
+            <ToolItem name="Node.js" href="https://nodejs.org/" />
+            <ToolItem name="Express" href="https://expressjs.com/" />
+            <ToolItem name="axios" href="https://axios-http.com/" />
+            <ToolItem name="downshift" href="https://www.downshift-js.com/" />
             <ToolItem name="Webpack" href="https://webpack.js.org/" />
             <ToolItem name="Sentry" href="https://sentry.io/" />
             <ToolItem name="Jest" href="https://jestjs.io/" />
@@ -110,10 +114,6 @@ export default function Home() {
             <ToolItem name="depcheck" href="https://github.com/depcheck/depcheck" />
             <ToolItem name="ts-prune" href="https://github.com/nadeesha/ts-prune" />
             <ToolItem name="axe" href="https://github.com/dequelabs/axe-core" />
-            {/* <ToolItem name="Prometheus" href="https://prometheus.io/" /> */}
-            <ToolItem name="axios" href="https://axios-http.com/" />
-            <ToolItem name="downshift" href="https://www.downshift-js.com/" />
-            {/* <ToolItem name="emotion" href="https://emotion.sh/" /> */}
             <ToolItem name="Asana" href="https://asana.com/" />
             <ToolItem name="Notion" href="https://www.notion.so/" />
             <ToolItem name="VSCode" href="https://code.visualstudio.com/" />
@@ -146,7 +146,7 @@ export default function Home() {
               <span>
                 <a
                   href="https://kentcdodds.com/blog"
-                  className="text-cyan-800 hover:opacity-70"
+                  className="text-cyan-700 hover:opacity-70"
                   target="_blank"
                 >
                   Kent C. Dodds
@@ -167,7 +167,7 @@ export default function Home() {
               <span>
                 <a
                   href="https://www.youtube.com/@mattpocockuk"
-                  className="text-cyan-800 hover:opacity-70"
+                  className="text-cyan-700 hover:opacity-70"
                   target="_blank"
                 >
                   Matt Pocock
@@ -186,7 +186,7 @@ export default function Home() {
               <span>
                 <a
                   href="https://www.youtube.com/channel/UC-8QAzbLcRglXeN_MY9blyw"
-                  className="text-cyan-800 hover:opacity-70"
+                  className="text-cyan-700 hover:opacity-70"
                   target="_blank"
                 >
                   Ben Awad
@@ -205,7 +205,7 @@ export default function Home() {
               <span>
                 <a
                   href="https://www.youtube.com/@Fireship"
-                  className="text-cyan-800 hover:opacity-70"
+                  className="text-cyan-700 hover:opacity-70"
                   target="_blank"
                 >
                   Fireship
@@ -224,7 +224,7 @@ export default function Home() {
               <span>
                 <a
                   href="https://www.youtube.com/@TraversyMedia"
-                  className="text-cyan-800 hover:opacity-70"
+                  className="text-cyan-700 hover:opacity-70"
                   target="_blank"
                 >
                   TraversyMedia
@@ -243,7 +243,7 @@ export default function Home() {
               <span>
                 <a
                   href="https://reactnewsletter.com/"
-                  className="text-cyan-800 hover:opacity-70"
+                  className="text-cyan-700 hover:opacity-70"
                   target="_blank"
                 >
                   React Newsletter
@@ -261,10 +261,31 @@ export default function Home() {
               <span>
                 <a
                   href="https://bytes.dev/"
-                  className="text-cyan-800 hover:opacity-70"
+                  className="text-cyan-700 hover:opacity-70"
                   target="_blank"
                 >
                   Bytes Newsletter
+                </a>
+              </span>
+            </li>
+            <li className="flex align-top">
+              <Image
+                src="/book.svg"
+                alt="Book icon"
+                className="mr-2 mt-1 h-7 w-7 sm:h-9 sm:w-9"
+                width={1}
+                height={1}
+              />
+              <span>
+                <a
+                  href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073"
+                  className="text-cyan-700 hover:opacity-70"
+                  target="_blank"
+                >
+                  The Clean Coder:{' '}
+                  <span className="text-lg sm:text-2xl">
+                    A Code of Conduct for Professional Programmers (Robert C. Martin)
+                  </span>
                 </a>
               </span>
             </li>
@@ -272,36 +293,15 @@ export default function Home() {
         </section>
         <section>
           <h2 className="mb-4 text-4xl font-medium sm:mb-8 sm:text-3xl">
-            Books that have shaped me as a programmer
-          </h2>
-          <ul>
-            <li>
-              <a
-                href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073"
-                className="text-cyan-800 hover:opacity-70"
-                target="_blank"
-              >
-                The Clean Coder:{' '}
-                <span className="text-lg sm:text-2xl">
-                  A Code of Conduct for Professional Programmers
-                  <br />
-                  (Robert C. Martin)
-                </span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2 className="mb-4 text-4xl font-medium sm:mb-8 sm:text-3xl">
             What others say about me
           </h2>
-          <blockquote className="inline-block w-auto rounded-md border-2 border-solid border-neutral-200 bg-[#ccc] p-3 font-thin italic">
+          <blockquote className="inline-block w-auto rounded-md border-2 border-solid border-neutral-100 border-opacity-50 bg-[#ccc] bg-gradient-to-r from-neutral-300 via-neutral-200 to-neutral-300 p-3 font-extralight italic">
             &quot;He is so effective, I suspect that they are 2 Kevins&quot;
           </blockquote>
           <figcaption className="mb-12 text-lg sm:text-2xl">
             (Benoît, senior developer and former colleague)
           </figcaption>
-          <blockquote className="inline-block w-auto rounded-md border-2 border-solid border-neutral-200 bg-[#ccc] p-3 font-thin italic">
+          <blockquote className="inline-block w-auto rounded-md border-2 border-solid border-neutral-100 border-opacity-50 bg-[#ccc] bg-gradient-to-r from-neutral-300 via-neutral-200 to-neutral-300 p-3 font-extralight italic">
             &quot;I would lead a war in the company to have you back as an engineer&quot;
           </blockquote>
           <figcaption className="mb-12 text-lg sm:text-2xl">
@@ -313,7 +313,7 @@ export default function Home() {
           <p>
             Look at my full CV on{' '}
             <a
-              className="text-cyan-800 hover:opacity-70"
+              className="text-cyan-700 hover:opacity-70"
               href="https://www.linkedin.com/in/kevin-herklotz-70407a153"
               target="_blank"
             >

@@ -9,7 +9,7 @@ export default function ToolItem({ name, href }: ToolItemProps) {
       <a
         href={href}
         target="_blank"
-        className="rounded bg-neutral-200 p-2 text-xl sm:p-3 sm:text-2xl"
+        className="rounded bg-neutral-300 p-2 text-xl sm:p-3 sm:text-2xl"
       >
         {name}
       </a>
