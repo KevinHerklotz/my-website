@@ -25,7 +25,7 @@ export default function Home() {
 
       <main className="mb-12 flex flex-col items-center justify-between gap-12 px-4 py-4 text-center text-xl font-light sm:gap-24 sm:py-16 sm:text-2xl md:px-16 md:text-3xl lg:m-auto lg:max-w-screen-lg">
         <div>
-          <div className="relative flex place-items-center before:absolute before:-z-20 before:h-[300px] before:w-[480px] before:-translate-y-1/2 before:rounded-full before:bg-gradient-radial before:from-orange-50 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-y-1/3 after:bg-gradient-radial after:from-sky-100 after:via-blue-50 after:blur-3xl after:content-[''] before:lg:h-[360px]">
+          <div className="relative flex place-items-center before:absolute before:-z-20 before:h-[300px] before:w-[350px] before:max-w-full before:-translate-y-1/3 before:rounded-full before:bg-gradient-radial before:from-orange-100 before:to-transparent before:opacity-60 before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:max-w-full after:translate-y-1/3 after:bg-gradient-radial after:from-sky-100 after:via-blue-100 after:blur-3xl after:content-['']">
             <Image
               src="https://avatars.githubusercontent.com/u/9254854"
               alt="picture of myself"
