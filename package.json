@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "prebuild": "npm run test",
+    "postbuild": "linkinator .next/server/app/index.html --skip '(\\.(svg|css|js|woff2|ico))|_next/image|www\\.ricardo\\.ch|www\\.linkedin\\.com'",
     "start": "next start",
     "lint": "next lint",
     "jest": "NODE_ENV=test jest",
@@ -41,6 +42,7 @@
     "eslint-plugin-testing-library": "^5.11.0",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
+    "linkinator": "^5.0.1",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "ts-jest": "^29.1.0"
