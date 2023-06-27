@@ -6,6 +6,22 @@ export default function Home() {
     <>
       <header className="flex justify-end gap-2 pr-2 pt-2 opacity-80">
         <a
+          title="Email me"
+          href='mailto:"kevin.herklotz@proton.me"'
+          className="flex items-center hover:opacity-70"
+          target="_blank"
+        >
+          <div className=" flex h-[22px] w-[22px] justify-center rounded-sm bg-black">
+            <Image
+              src="/envelope.svg"
+              alt="Email icon"
+              width={17}
+              height={17}
+              className="opacity-90 invert"
+            />
+          </div>
+        </a>
+        <a
           title="LinkedIn"
           href="https://www.linkedin.com/in/kevin-herklotz-70407a153/"
           className="hover:opacity-70"
@@ -102,7 +118,7 @@ export default function Home() {
             <ToolItem name="Babel" href="https://babeljs.io/" />
             <ToolItem name="Storybook" href="https://storybook.js.org/" />
             <ToolItem name="Material-UI" href="https://mui.com/" />
-            <ToolItem name="SCSS" href="https://sass-lang.com/" />
+            <ToolItem name="SCSS" href="https://github.com/sass" />
             <ToolItem name="Node.js" href="https://nodejs.org/" />
             <ToolItem name="Express" href="https://expressjs.com/" />
             <ToolItem name="axios" href="https://axios-http.com/" />
