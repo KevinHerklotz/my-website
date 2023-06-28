@@ -85,7 +85,7 @@ export default function Home() {
             </li>
             <li>
               <span className="font-medium">I love</span> to set up and use{' '}
-              <span className="text-red-900">tools</span> that help me write better code.
+              <span className="text-red-900">tools</span> that help to write better code.
             </li>
             <li>
               <span className="font-medium">I love</span> to think in the{' '}
@@ -118,7 +118,7 @@ export default function Home() {
             <ToolItem name="Babel" href="https://babeljs.io/" />
             <ToolItem name="Storybook" href="https://storybook.js.org/" />
             <ToolItem name="Material-UI" href="https://mui.com/" />
-            <ToolItem name="SCSS" href="https://github.com/sass" />
+            <ToolItem name="SCSS" href="https://sass-lang.com/" />
             <ToolItem name="Node.js" href="https://nodejs.org/" />
             <ToolItem name="Express" href="https://expressjs.com/" />
             <ToolItem name="axios" href="https://axios-http.com/" />
