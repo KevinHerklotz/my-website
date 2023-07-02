@@ -144,6 +144,7 @@ export default function Home() {
             <ToolItem name="GraphQL" href="https://graphql.org/" />
             <ToolItem name="Tailwind" href="https://tailwindcss.com/" />
             <ToolItem name="Zustand" href="https://github.com/pmndrs/zustand" />
+            <ToolItem name="Zod" href="https://zod.dev/" />
           </ul>
         </section>
         <section>
