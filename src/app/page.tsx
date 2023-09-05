@@ -148,7 +148,7 @@ export default function Home() {
           </ul>
         </section>
         <section>
-          <h2 className="mb-4 text-4xl font-medium sm:mb-8 sm:text-3xl">
+          <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">
             Where I get my inspiration from
           </h2>
           <ul className="text-left ">
@@ -309,7 +309,7 @@ export default function Home() {
           </ul>
         </section>
         <section>
-          <h2 className="mb-4 text-4xl font-medium sm:mb-8 sm:text-3xl">
+          <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">
             What others say about me
           </h2>
           <blockquote className="inline-block w-auto rounded-md border-2 border-solid border-neutral-100 border-opacity-50 bg-[#ccc] bg-gradient-to-r from-neutral-300 via-neutral-200 to-neutral-300 p-3 font-extralight italic">
@@ -326,7 +326,7 @@ export default function Home() {
           </figcaption>
         </section>
         <section>
-          <h2 className="mb-4 text-4xl font-medium sm:mb-8 sm:text-3xl">You need more infos?</h2>
+          <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">You need more infos?</h2>
           <p>
             Look at my full CV on{' '}
             <a
