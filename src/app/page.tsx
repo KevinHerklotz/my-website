@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import ToolItem from './ToolItem'
+import Citation from './Citation'
 
 export default function Home() {
   return (
@@ -312,18 +313,22 @@ export default function Home() {
           <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">
             What others say about me
           </h2>
-          <blockquote className="inline-block w-auto rounded-md border-2 border-solid border-neutral-100 border-opacity-50 bg-[#ccc] bg-gradient-to-r from-neutral-300 via-neutral-200 to-neutral-300 p-3 font-extralight italic">
-            &quot;He is so effective, I suspect that they are 2 Kevins&quot;
-          </blockquote>
-          <figcaption className="mb-12 text-lg sm:text-2xl">
-            (Benoît, senior developer and former colleague)
-          </figcaption>
-          <blockquote className="inline-block w-auto rounded-md border-2 border-solid border-neutral-100 border-opacity-50 bg-[#ccc] bg-gradient-to-r from-neutral-300 via-neutral-200 to-neutral-300 p-3 font-extralight italic">
-            &quot;I would lead a war in the company to have you back as an engineer&quot;
-          </blockquote>
-          <figcaption className="mb-12 text-lg sm:text-2xl">
-            (Jeremy, senior developer and my former manager)
-          </figcaption>
+          <Citation
+            quote="He is so effective, I suspect that they are 2 Kevins"
+            who="Benoît, senior developer and former colleague"
+          />
+          <Citation
+            quote="Kevin knows perfectly how to balance between shipping fast and shipping clean."
+            who="Valentin, principal engineer and former colleague"
+          />
+          <Citation
+            quote="I would lead a war in the company to have you back as an engineer"
+            who="Jeremy, senior developer and my former manager"
+          />
+          <Citation
+            quote="Kevin is one of the best Frontend developers I ever worked with."
+            who="Maciej, senior developer and former colleague"
+          />
         </section>
         <section>
           <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">You need more infos?</h2>
