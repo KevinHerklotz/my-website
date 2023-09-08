@@ -1,0 +1,48 @@
+:root {
+  --carousel-arrow-size: 2rem;
+}
+
+.slick-prev,
+.slick-next {
+  width: var(--carousel-arrow-size);
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: var(--carousel-arrow-size);
+  opacity: 0.4;
+  color: black;
+}
+
+.slick-prev:focus::before,
+.slick-next:focus::before,
+.slick-prev:hover::before,
+.slick-next:hover::before {
+  opacity: 0.6;
+}
+
+.slick-prev {
+  left: calc(-0.85rem - var(--carousel-arrow-size));
+}
+
+.slick-next {
+  right: calc(-0.85rem - var(--carousel-arrow-size));
+}
+
+.slick-dots {
+  bottom: -2.5rem;
+}
+
+.slick-dots li button::before {
+  font-size: 1rem;
+  opacity: 0.1;
+}
+
+.slick-dots li.slick-active button::before {
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+.slick-dots li:hover button::before {
+  opacity: 0.7;
+}

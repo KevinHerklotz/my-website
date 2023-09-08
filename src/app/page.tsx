@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import ToolItem from './ToolItem'
 import Citation from './Citation'
+import Carousel from './Carousel'
 
 export default function Home() {
   return (
@@ -101,6 +102,10 @@ export default function Home() {
               <span className="text-red-900">job</span>.
             </li>
           </ul>
+        </section>
+        <section className="max-w-full">
+          <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">Success stories</h2>
+          <Carousel />
         </section>
         <section>
           <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">Tools</h2>
