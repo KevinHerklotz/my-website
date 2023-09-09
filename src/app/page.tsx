@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import ToolItem from './ToolItem'
-import Citation from './Citation'
-import Carousel from './Carousel'
+import ToolItem from './components/ToolItem'
+import Citation from './components/Citation'
+import Carousel from './components/Carousel'
 
 export default function Home() {
   return (
@@ -57,9 +57,10 @@ export default function Home() {
         <section>
           <h1 className="mb-8 text-4xl font-medium sm:text-5xl">Hi! I&apos;m Kevin,</h1>
           <p className="leading-normal">
-            a dedicated <strong className="font-semibold">Senior Frontend Developer</strong> who
-            works as a <strong className="font-semibold">Freelancer</strong> in Switzerland.
-            I&apos;m very experienced in e-commerce business, having worked for{' '}
+            a dedicated <strong className="font-semibold">Senior Frontend Developer</strong> with 11
+            years of experience in web development. I work as a{' '}
+            <strong className="font-semibold">Freelancer</strong> in Switzerland. I&apos;m very
+            experienced in e-commerce business, having worked for{' '}
             <a
               className="text-cyan-700 hover:opacity-70"
               href="https://www.ricardo.ch"
@@ -295,7 +296,7 @@ export default function Home() {
               <Image
                 src="/book.svg"
                 alt="Book icon"
-                className="mr-2 mt-1 h-7 w-7 sm:h-9 sm:w-9"
+                className="mr-3.5 mt-1 h-7 w-7 sm:h-9 sm:w-9"
                 width={1}
                 height={1}
               />
