@@ -14,7 +14,7 @@ export default function Home() {
           className="flex items-center hover:opacity-70"
           target="_blank"
         >
-          <div className=" flex h-[22px] w-[22px] justify-center rounded-sm bg-black">
+          <div className="flex h-[22px] w-[22px] justify-center rounded-[1.5px] bg-black">
             <Image
               src="/envelope.svg"
               alt="Email icon"
@@ -79,32 +79,27 @@ export default function Home() {
           <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">What I love</h2>
           <ul className="text-left ">
             <li>
-              <span className="font-medium">I love</span>{' '}
-              <span className="text-red-900">clean</span> code.
+              I love <span className="font-medium">clean</span> code.
             </li>
             <li>
-              <span className="font-medium">I love</span> to write meaningful{' '}
-              <span className="text-red-900">tests</span>.
+              I love to write meaningful <span className="font-medium">tests</span>.
             </li>
             <li>
-              <span className="font-medium">I love</span> to do{' '}
-              <span className="text-red-900">reviews</span> (It helps me and others to grow).
+              I love to do <span className="font-medium">reviews</span> (It helps me and others to
+              grow).
             </li>
             <li>
-              <span className="font-medium">I love</span> to set up and use{' '}
-              <span className="text-red-900">tools</span> that help to write better code.
+              I love to set up and use <span className="font-medium">tools</span> that help to write
+              better code.
             </li>
             <li>
-              <span className="font-medium">I love</span> to think in the{' '}
-              <span className="text-red-900">user</span>&apos;s perspective.
+              I love to think in the <span className="font-medium">user</span>&apos;s perspective.
             </li>
             <li>
-              <span className="font-medium">I love</span> to work in a{' '}
-              <span className="text-red-900">team</span>.
+              I love to work in a <span className="font-medium">team</span>.
             </li>
             <li>
-              <span className="font-medium">I love</span> my{' '}
-              <span className="text-red-900">job</span>.
+              I love my <span className="font-medium">job</span>.
             </li>
           </ul>
         </section>

@@ -32,7 +32,7 @@ export function ConnectButton() {
             .
           </p>
           <p>
-            You can also simply write me an email:{' '}
+            You can also simply message me via email:{' '}
             <a
               href='mailto:"kevin.herklotz@proton.me"'
               className="text-cyan-700 hover:opacity-70"
