@@ -23,7 +23,6 @@ export default function Carousel() {
           },
         ]}
         className="rounded-md border-2 border-solid border-neutral-100 border-opacity-50 bg-[#ccc] bg-gradient-to-r from-neutral-300 via-neutral-200 to-neutral-300 px-6 py-10 font-light"
-        // className="font-light"
       >
         <div>
           <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
@@ -46,7 +45,7 @@ export default function Carousel() {
             I was constantly monitoring Ricardo's core web vitals, not only to ensure having great
             SEO on technical side, but also a fast and seamless user experience. I implemented
             strategies such as lazy loading unnecessary code and automatic image optimization to
-            reduce file sizes by up to 80% without noticeable quality loss. The outcome of that
+            reduce file sizes by up to 80% without noticeable quality loss. The outcome of this
             continuous effort was that the website became much faster, especially on mobile devices,
             which also improved Ricardo's ranking in Google's search results.
           </p>
@@ -67,7 +66,7 @@ export default function Carousel() {
             Enhancing testing infrastructure
           </h3>
           <p>
-            Following an intensive workshop with Kent C. Dodds, the creator of "Testing Library," my
+            Following an intensive workshop with Kent C. Dodds, the creator of "Testing Library", my
             colleague and I revamped our testing approach. We established useful test wrappers for
             our code, simplifying the testing process. Additionally, I documented common test
             scenarios with example code and provided valuable feedback on pull requests from other
