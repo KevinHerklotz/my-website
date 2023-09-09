@@ -7,6 +7,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './styles.css'
+import { ConnectButton } from '../ConnectButton'
 
 export default function Carousel() {
   return (
@@ -141,6 +142,9 @@ export default function Carousel() {
             exciting projects, please don't hesitate to reach out. Let's connect and explore the
             possibilities together. Your next software solution could be just a conversation away!
           </p>
+          <div className="mt-16">
+            <ConnectButton />
+          </div>
         </div>
       </Slider>
     </div>

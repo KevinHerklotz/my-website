@@ -26,7 +26,20 @@ module.exports = {
   env: {
     'jest/globals': true,
   },
+  rules: {
+    'import/prefer-default-export': 'off',
+    'react/function-component-definition': [
+      'error',
+      { namedComponents: ['arrow-function', 'function-declaration'] },
+    ],
+  },
   overrides: [
+    {
+      files: ['src/components/ui/**'],
+      rules: {
+        'react/jsx-props-no-spreading': 'off',
+      },
+    },
     {
       files: ['**/*.test.tsx'],
       plugins: ['jest'],

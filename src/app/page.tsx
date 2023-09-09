@@ -2,6 +2,7 @@ import Image from 'next/image'
 import ToolItem from './components/ToolItem'
 import Citation from './components/Citation'
 import Carousel from './components/Carousel'
+import { ConnectButton } from './components/ConnectButton'
 
 export default function Home() {
   return (
@@ -43,7 +44,7 @@ export default function Home() {
 
       <main className="mb-12 flex flex-col items-center justify-between gap-12 px-4 py-4 text-center text-xl font-light sm:gap-24 sm:py-16 sm:text-2xl md:px-16 md:text-3xl lg:m-auto lg:max-w-screen-lg">
         <div>
-          <div className="relative flex place-items-center before:absolute before:-z-20 before:h-[300px] before:w-[350px] before:max-w-full before:-translate-y-1/3 before:rounded-full before:bg-gradient-radial before:from-orange-100 before:to-transparent before:opacity-60 before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:max-w-full after:translate-y-1/3 after:bg-gradient-radial after:from-sky-100 after:via-blue-100 after:blur-3xl after:content-['']">
+          <div className="before:bg-gradient-radial after:bg-gradient-radial relative flex place-items-center before:absolute before:-z-20 before:h-[300px] before:w-[350px] before:max-w-full before:-translate-y-1/3 before:rounded-full before:from-orange-100 before:to-transparent before:opacity-60 before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:max-w-full after:translate-y-1/3 after:from-sky-100 after:via-blue-100 after:blur-3xl after:content-['']">
             <Image
               src="https://avatars.githubusercontent.com/u/9254854"
               alt="picture of myself"
@@ -70,6 +71,9 @@ export default function Home() {
             </a>{' '}
             in Zug for more than 4 years.
           </p>
+        </section>
+        <section>
+          <ConnectButton />
         </section>
         <section>
           <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">What I love</h2>
