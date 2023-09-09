@@ -27,6 +27,7 @@ module.exports = {
     'jest/globals': true,
   },
   rules: {
+    '@typescript-eslint/no-unused-vars': 'error',
     'import/prefer-default-export': 'off',
     'react/function-component-definition': [
       'error',
