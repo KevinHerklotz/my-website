@@ -10,6 +10,9 @@ module.exports = {
     ],
   },
   setupFilesAfterEnv: ['<rootDir>/src/testing/setupTests.ts'],
+  moduleNameMapper: {
+    '\\.(css|scss)$': 'identity-obj-proxy',
+  },
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
 }

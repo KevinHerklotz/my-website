@@ -24,6 +24,7 @@ describe('<Home />', () => {
     screen.getByAltText(/picture of myself/i)
     screen.getByText(/Senior Frontend Developer/i)
     screen.getByText(/What I love/i)
+    screen.getByText(/Success stories/i)
     screen.getByText(/Tools I love the most/i)
     screen.getByText(/Other tools/i)
     screen.getByText(/Tools I would love to use more/i)
