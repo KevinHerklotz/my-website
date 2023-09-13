@@ -24,8 +24,9 @@ describe('<Carousel />', () => {
   })
   it('should show 9 slides and 9 dots', () => {
     const { container } = render(<Home />)
-    expect(container.getElementsByClassName('slick-dots')?.[0]).toBeInTheDocument()
-    expect(container.getElementsByClassName('slick-dots')[0]?.childNodes).toHaveLength(9)
+
+    expect(container.getElementsByClassName('slick-dots')[0]).toBeInTheDocument()
+    expect(container.getElementsByClassName('slick-dots')[0].childNodes).toHaveLength(9)
   })
   it('should show the second page, when clicking next', async () => {
     const user = userEvent.setup()

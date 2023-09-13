@@ -14,13 +14,13 @@ module.exports = {
     'eslint:recommended',
     'airbnb',
     'airbnb-typescript',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/strict',
     'next/core-web-vitals',
     'prettier', // always keep this the last item in the list
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.json',
+    project: true,
   },
   plugins: ['@typescript-eslint', 'react-hooks'],
   env: {
