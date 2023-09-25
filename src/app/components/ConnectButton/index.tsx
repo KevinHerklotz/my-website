@@ -34,11 +34,11 @@ export function ConnectButton() {
           <p>
             You can also simply message me via email:{' '}
             <a
-              href='mailto:"kevin.herklotz@proton.me"'
+              href='mailto:"hello@clean-code-kevin.ch"'
               className="text-cyan-700 hover:opacity-70"
               target="_blank"
             >
-              kevin.herklotz@proton.me
+              hello@clean-code-kevin.ch
             </a>
           </p>
         </div>

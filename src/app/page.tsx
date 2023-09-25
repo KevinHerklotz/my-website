@@ -10,7 +10,7 @@ export default function Home() {
       <header className="flex justify-end gap-2 pr-2 pt-2 opacity-80">
         <a
           title="Email me"
-          href='mailto:"kevin.herklotz@proton.me"'
+          href='mailto:"hello@clean-code-kevin.ch"'
           className="flex items-center hover:opacity-70"
           target="_blank"
         >
