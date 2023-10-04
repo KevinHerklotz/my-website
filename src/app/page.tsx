@@ -125,6 +125,7 @@ export default function Home() {
             <ToolItem name="Storybook" href="https://storybook.js.org/" />
             <ToolItem name="Material-UI" href="https://mui.com/" />
             <ToolItem name="SCSS" href="https://sass-lang.com/" />
+            <ToolItem name="Tailwind" href="https://tailwindcss.com/" />
             <ToolItem name="Node.js" href="https://nodejs.org/" />
             <ToolItem name="Express" href="https://expressjs.com/" />
             <ToolItem name="axios" href="https://axios-http.com/" />
@@ -148,7 +149,6 @@ export default function Home() {
           </h3>
           <ul className="flex flex-wrap justify-center gap-4">
             <ToolItem name="GraphQL" href="https://graphql.org/" />
-            <ToolItem name="Tailwind" href="https://tailwindcss.com/" />
             <ToolItem name="Zustand" href="https://github.com/pmndrs/zustand" />
             <ToolItem name="Zod" href="https://zod.dev/" />
           </ul>
