@@ -265,6 +265,24 @@ export default function Home() {
               />
               <span>
                 <a
+                  href="https://thisweekinreact.com/"
+                  className="text-cyan-700 hover:opacity-70"
+                  target="_blank"
+                >
+                  This Week In React
+                </a>
+              </span>
+            </li>
+            <li className="flex align-top">
+              <Image
+                src="/envelope.svg"
+                alt="Email icon"
+                className="mr-2 h-7 w-7 sm:h-9 sm:w-9"
+                width={1}
+                height={1}
+              />
+              <span>
+                <a
                   href="https://reactnewsletter.com/"
                   className="text-cyan-700 hover:opacity-70"
                   target="_blank"

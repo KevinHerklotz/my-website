@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "pnpm test && next build && pnpm check_links",
-    "prebuild": "",
     "check_links": "linkinator .next/server/app/index.html --skip '(\\.(svg|css|js|woff2|ico))|_next/image|www\\.ricardo\\.ch|www\\.linkedin\\.com'",
     "start": "next start",
     "lint": "next lint",

@@ -1,5 +1,4 @@
-This is my website based on [Next.js](https://nextjs.org/). You can open it under 
-[www.clean-code-kevin.ch](https://www.clean-code-kevin.ch/).
+This is my website based on [Next.js](https://nextjs.org/). You can open it under [www.clean-code-kevin.ch](https://www.clean-code-kevin.ch/).
 
 # How to contribute
 
