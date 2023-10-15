@@ -23,9 +23,6 @@ module.exports = {
     project: true,
   },
   plugins: ['@typescript-eslint', 'react-hooks'],
-  env: {
-    'jest/globals': true,
-  },
   rules: {
     '@typescript-eslint/no-unused-vars': 'error',
     'import/prefer-default-export': 'off',
@@ -43,18 +40,17 @@ module.exports = {
     },
     {
       files: ['**/*.test.tsx'],
-      plugins: ['jest'],
+      plugins: ['vitest'],
       extends: [
-        'plugin:jest/recommended',
-        'plugin:jest-dom/recommended',
         'plugin:testing-library/react',
+        'plugin:vitest/recommended',
       ],
       rules: {
         'import/no-extraneous-dependencies': 'off',
-        'jest/expect-expect': [
+        'vitest/expect-expect': [
           'error',
           {
-            assertFunctionNames: [
+            customExpressions: [
               'expect',
               ...assertFunctionGenerator({
                 variants: ['get', 'getAll', 'find', 'findAll'],

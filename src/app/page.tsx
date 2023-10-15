@@ -133,6 +133,7 @@ export default function Home() {
             <ToolItem name="Webpack" href="https://webpack.js.org/" />
             <ToolItem name="Sentry" href="https://sentry.io/" />
             <ToolItem name="Jest" href="https://jestjs.io/" />
+            <ToolItem name="Vitest" href="https://vitest.dev/" />
             <ToolItem name="Cypress" href="https://www.cypress.io/" />
             <ToolItem name="depcheck" href="https://github.com/depcheck/depcheck" />
             <ToolItem name="ts-prune" href="https://github.com/nadeesha/ts-prune" />
