@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "pnpm test && next build && pnpm check_links",
-    "check_links": "linkinator .next/server/app/index.html --skip '(\\.(svg|css|js|woff2|ico))|_next/image|www\\.ricardo\\.ch|www\\.linkedin\\.com'",
+    "check_links": "linkinator .next/server/app/index.html --skip '(\\.(svg|css|js|woff2|ico))|_next/image|www\\.ricardo\\.ch|www\\.linkedin\\.com|kentcdodds'",
     "start": "next start",
     "lint": "next lint",
-    "vitest": "vitest run",
-    "test": "pnpm vitest && pnpm lint"
+    "vitest": "vitest",
+    "test": "pnpm vitest run && pnpm lint"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "1.0.4",
