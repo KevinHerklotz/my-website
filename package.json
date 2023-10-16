@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "vitest": "vitest",
-    "test": "pnpm vitest run && pnpm lint"
+    "test": "NODE_ENV=test pnpm vitest run && pnpm lint"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "1.0.4",
