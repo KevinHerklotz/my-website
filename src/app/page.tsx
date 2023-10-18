@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ToolItem from './components/ToolItem'
 import Citation from './components/Citation'
 import Carousel from './components/Carousel'
-import { ConnectButton } from './components/ConnectButton'
+import ConnectButton from './components/ConnectButton'
 
 export default function Home() {
   return (

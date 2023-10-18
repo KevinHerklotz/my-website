@@ -7,7 +7,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 
-export function ConnectButton() {
+export default function ConnectButton() {
   return (
     <Dialog>
       <DialogTrigger asChild>
