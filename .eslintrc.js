@@ -17,7 +17,7 @@ module.exports = {
     'airbnb-typescript',
     'plugin:@typescript-eslint/strict',
     'next/core-web-vitals',
-    'prettier', // always keep this the last item in the list
+    'plugin:prettier/recommended', // always keep this the last item in the list
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -42,10 +42,7 @@ module.exports = {
     {
       files: ['**/*.test.tsx'],
       plugins: ['vitest'],
-      extends: [
-        'plugin:testing-library/react',
-        'plugin:vitest/recommended',
-      ],
+      extends: ['plugin:testing-library/react', 'plugin:vitest/recommended'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
         'vitest/expect-expect': [
