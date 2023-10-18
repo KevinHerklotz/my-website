@@ -1,8 +1,7 @@
 // Direct Node access is bad practice, but because the Slider library isn't written in the most testable way,
-// so unfortunately I have to go around it like that:
+// I have to go around it like that:
 /* eslint-disable testing-library/no-node-access, testing-library/no-container */
 import React from 'react'
-
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
