@@ -22,10 +22,10 @@ export default function ConnectButton() {
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <p>
-            The easiest way to connect is to connect and message me on{' '}
+            The easiest way to get in touch is to connect and message me on{' '}
             <a
               href="https://www.linkedin.com/in/kevin-herklotz-70407a153/"
-              className="text-cyan-700 hover:opacity-70"
+              className="text-cyan-700 hover:opacity-70 font-bold"
               target="_blank"
             >
               LinkedIn
@@ -35,10 +35,10 @@ export default function ConnectButton() {
           <p>
             You can also simply message me via email:
             <br />
-            <span className="flex gap-2 flex-direction">
+            <span className="flex gap-2 max-[450px]:flex-col max-[450px]:gap-4 min-[451px]:items-center">
               <a
                 href="mailto:hello@clean-code-kevin.ch"
-                className="text-cyan-700 hover:opacity-70"
+                className="text-cyan-700 hover:opacity-70 font-bold"
                 target="_blank"
               >
                 hello@clean-code-kevin.ch
