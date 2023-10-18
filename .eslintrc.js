@@ -13,6 +13,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'airbnb',
+    'airbnb/hooks',
     'airbnb-typescript',
     'plugin:@typescript-eslint/strict',
     'next/core-web-vitals',
