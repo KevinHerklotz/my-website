@@ -6,6 +6,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog'
+import CopyButton from './CopyButton'
 
 export default function ConnectButton() {
   return (
@@ -21,7 +22,7 @@ export default function ConnectButton() {
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <p>
-            The easiest way to connect is to add and message me on{' '}
+            The easiest way to connect is to connect and message me on{' '}
             <a
               href="https://www.linkedin.com/in/kevin-herklotz-70407a153/"
               className="text-cyan-700 hover:opacity-70"
@@ -32,14 +33,18 @@ export default function ConnectButton() {
             .
           </p>
           <p>
-            You can also simply message me via email:{' '}
-            <a
-              href="mailto:hello@clean-code-kevin.ch"
-              className="text-cyan-700 hover:opacity-70"
-              target="_blank"
-            >
-              hello@clean-code-kevin.ch
-            </a>
+            You can also simply message me via email:
+            <br />
+            <span className="flex gap-2 flex-direction">
+              <a
+                href="mailto:hello@clean-code-kevin.ch"
+                className="text-cyan-700 hover:opacity-70"
+                target="_blank"
+              >
+                hello@clean-code-kevin.ch
+              </a>
+              <CopyButton />
+            </span>
           </p>
         </div>
       </DialogContent>
