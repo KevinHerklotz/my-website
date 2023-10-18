@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "pnpm test && next build && pnpm check_links",
-    "check_links": "linkinator .next/server/app/index.html --skip '(\\.(svg|css|js|woff2|ico))|_next/image|www\\.ricardo\\.ch|www\\.linkedin\\.com|kentcdodds'",
+    "check_links": "linkinator .next/server/app/index.html --timeout 2000 --retry-errors --skip '(\\.(svg|css|js|woff2|ico))|_next/image|www\\.ricardo\\.ch|www\\.linkedin\\.com|kentcdodds'",
     "start": "next start",
     "lint": "next lint",
     "vitest": "vitest",
