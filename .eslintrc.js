@@ -31,6 +31,7 @@ module.exports = {
       'error',
       { namedComponents: ['arrow-function', 'function-declaration'] },
     ],
+    'react/require-default-props': 'off',
   },
   overrides: [
     {

@@ -11,25 +11,25 @@ import ConnectButton from '../ConnectButton'
 
 export default function Carousel() {
   return (
-    <div className="mb-10 sm:px-10">
+    <div className="rounded-2xl border-2 border-solid border-neutral-500 bg-opacity-30 pb-12 font-light">
       <Slider
         dots
         speed={300}
         responsive={[
           {
-            breakpoint: 640,
+            breakpoint: 768,
             settings: {
               arrows: false,
             },
           },
         ]}
-        className="rounded-md border-2 border-solid border-neutral-100 border-opacity-50 bg-[#ccc] bg-gradient-to-r from-neutral-300 via-neutral-200 to-neutral-300 px-6 py-10 font-light"
+        className="font-light"
       >
-        <div>
-          <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
+        <div className="p-6 sm:p-10">
+          <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
             Optimizing costs and user experience
           </h3>
-          <p>
+          <p className="text-justify">
             Given that Ricardo has millions of page views every day, excessive API requests from
             common elements like the header and search bar had a direct impact on costs and loading
             times. This led me to introduce "react-query", a client-side caching library. My proof
@@ -38,11 +38,11 @@ export default function Carousel() {
             interactions at Ricardo, delivering daily cost savings.
           </p>
         </div>
-        <div>
-          <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
+        <div className="p-6 sm:p-10">
+          <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
             Optimizing website performance and SEO
           </h3>
-          <p>
+          <p className="text-justify">
             I was constantly monitoring Ricardo's core web vitals, not only to ensure having great
             SEO on technical side, but also a fast and seamless user experience. I implemented
             strategies such as lazy loading unnecessary code and automatic image optimization to
@@ -51,22 +51,22 @@ export default function Carousel() {
             which also improved Ricardo's ranking in Google's search results.
           </p>
         </div>
-        <div>
-          <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
+        <div className="p-6 sm:p-10">
+          <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
             Automatic error monitoring
           </h3>
-          <p>
+          <p className="text-justify">
             Earlier this year, I implemented Sentry for Ricardo, a crucial tool that monitors errors
             occurring in users' browsers. This initiative uncovered more than 20 hidden bugs, some
             of which directly impacted our revenue. Thanks to this proactive error monitoring, we
             were able to fix these issues promptly, ensuring a smoother experience for our users.
           </p>
         </div>
-        <div>
-          <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
+        <div className="p-6 sm:p-10">
+          <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
             Enhancing testing infrastructure
           </h3>
-          <p>
+          <p className="text-justify">
             Following an intensive workshop with Kent C. Dodds, the creator of "Testing Library", my
             colleague and I revamped our testing approach. We established useful test wrappers for
             our code, simplifying the testing process. Additionally, I documented common test
@@ -74,11 +74,11 @@ export default function Carousel() {
             developers. Consequently, Ricardo's test coverage surged from 30% to an impressive 70%.
           </p>
         </div>
-        <div>
-          <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
+        <div className="p-6 sm:p-10">
+          <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
             Automated Dead Code Detection
           </h3>
-          <p>
+          <p className="text-justify">
             With hundreds of thousands of lines of code in Ricardo's frontend, I was looking for a
             solution to automatically identify and remove unused or unnecessary code. Leveraging the
             right tools, I successfully pinpointed and removed 10'000 lines of "dead code". This
@@ -86,11 +86,11 @@ export default function Carousel() {
             cleanliness and substantial time savings in the future.
           </p>
         </div>
-        <div>
-          <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
+        <div className="p-6 sm:p-10">
+          <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
             Less bugs thanks to type safety
           </h3>
-          <p>
+          <p className="text-justify">
             Ricardo faced unpredictable bugs due to incorrect or missing types. To address this, I
             undertook a substantial refactoring of TypeScript types across our entire codebase. This
             did not only improve type safety significantly but also surfaced and resolved numerous
@@ -98,11 +98,11 @@ export default function Carousel() {
             to an overall boost in satisfaction.
           </p>
         </div>
-        <div>
-          <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
+        <div className="p-6 sm:p-10">
+          <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
             Standardizing codebase for faster development
           </h3>
-          <p>
+          <p className="text-justify">
             Managing 8 different "micro frontends" at Ricardo with 60'000 lines each posed a unique
             challenge. Creating a Ricardo-specific ESLint rules package helped to ensure consistency
             across projects. I spearheaded this effort and made sure that all different repositories
@@ -111,11 +111,11 @@ export default function Carousel() {
             teams and also helped to catch bugs before they could affect production.
           </p>
         </div>
-        <div>
-          <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
+        <div className="p-6 sm:p-10">
+          <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
             Winning the Ricardo Hackathon
           </h3>
-          <p>
+          <p className="text-justify">
             Ok, to be honest I took home the trophy in the "Funniest Contribution" category at the
             Ricardo hackathon. While not directly related to technical skills, it highlights my
             ability to inject humor and creativity into my work. I added a few entertaining easter
@@ -132,17 +132,17 @@ export default function Carousel() {
             without hitting enter.
           </p>
         </div>
-        <div>
-          <h3 className="mb-4 text-2xl font-medium sm:mb-8 sm:text-3xl">
+        <div className="p-6 sm:p-10">
+          <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
             Let's connect and elevate your next project
           </h3>
-          <p>
+          <p className="text-justify">
             As you've journeyed through my experiences and contributions, I appreciate your interest
             in my work. If you're interested to learn more or discuss how we can collaborate on
             exciting projects, please don't hesitate to reach out. Let's connect and explore the
             possibilities together. Your next software solution could be just a conversation away!
           </p>
-          <div className="mt-16">
+          <div className="mt-16 text-center">
             <ConnectButton />
           </div>
         </div>

@@ -13,7 +13,7 @@ export default function ConnectButton() {
     <Dialog>
       <DialogTrigger asChild>
         <Button size="lg" variant="default">
-          Let&apos;s connect
+          LET&apos;S CONNECT
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-xl">
@@ -25,7 +25,7 @@ export default function ConnectButton() {
             The easiest way to get in touch is to connect and message me on{' '}
             <a
               href="https://www.linkedin.com/in/kevin-herklotz-70407a153/"
-              className="text-cyan-700 hover:opacity-70 font-bold"
+              className="font-bold text-primary hover:text-orange-400"
               target="_blank"
             >
               LinkedIn
@@ -38,7 +38,7 @@ export default function ConnectButton() {
             <span className="flex gap-2 max-[450px]:flex-col max-[450px]:gap-4 min-[451px]:items-center">
               <a
                 href="mailto:hello@clean-code-kevin.ch"
-                className="text-cyan-700 hover:opacity-70 font-bold"
+                className="font-bold text-primary hover:text-orange-400"
                 target="_blank"
               >
                 hello@clean-code-kevin.ch

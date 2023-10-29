@@ -16,8 +16,8 @@ export default function CopyButton() {
     <Button
       size="sm"
       className={cn(
-        copyState === 'success' && 'hover:bg-green-200',
-        copyState === 'error' && 'hover:bg-red-200'
+        copyState === 'success' && 'hover:bg-green-600',
+        copyState === 'error' && 'bg-red-600'
       )}
       disabled={copyState === 'error'}
       variant="outline"
@@ -28,7 +28,7 @@ export default function CopyButton() {
       <Image
         src={copyState === 'success' ? '/check.svg' : '/copy.svg'}
         alt="copy icon"
-        className="mr-1 h-5 w-5"
+        className="mr-1 h-5 w-5 invert"
         width={1}
         height={1}
       />{' '}

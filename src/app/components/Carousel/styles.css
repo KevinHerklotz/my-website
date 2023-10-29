@@ -1,5 +1,5 @@
 :root {
-  --carousel-arrow-size: 2rem;
+  --carousel-arrow-size: 3rem;
 }
 
 .slick-prev,
@@ -11,7 +11,7 @@
 .slick-next::before {
   font-size: var(--carousel-arrow-size);
   opacity: 0.4;
-  color: black;
+  color: rgb(var(--foreground-rgb));
 }
 
 .slick-prev:focus::before,
@@ -22,25 +22,37 @@
 }
 
 .slick-prev {
-  left: calc(-0.85rem - var(--carousel-arrow-size));
+  left: calc(-0.6rem - var(--carousel-arrow-size));
 }
 
 .slick-next {
-  right: calc(-0.85rem - var(--carousel-arrow-size));
+  right: calc(-0.6rem - var(--carousel-arrow-size));
+}
+
+@media (min-width: 1080px) {
+  .slick-prev {
+    left: calc(-2rem - var(--carousel-arrow-size));
+  }
+  
+  .slick-next {
+    right: calc(-2rem - var(--carousel-arrow-size));
+  }
 }
 
 .slick-dots {
-  bottom: -2.5rem;
+  bottom: -1rem;
 }
 
 .slick-dots li button::before {
   font-size: 1rem;
   opacity: 0.1;
+  color: rgb(var(--foreground-rgb));
 }
 
 .slick-dots li.slick-active button::before {
   font-size: 1rem;
   opacity: 0.5;
+  color: rgb(var(--foreground-rgb));
 }
 
 .slick-dots li:hover button::before {
