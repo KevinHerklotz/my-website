@@ -113,7 +113,7 @@ export default function Home() {
               </ul>
             </section>
           </ContentAlignmentContainer>
-          <section className="relative mt-8 max-w-full before:absolute before:-inset-8 before:rounded-full before:bg-gradient-to-br before:from-yellow-700 before:via-blue-100 before:to-pink-100 before:opacity-5 before:blur-2xl before:content-['']">
+          <section className="relative mt-8 max-w-full before:absolute before:-inset-8 before:rounded-[15rem] before:bg-gradient-to-br before:from-pink-100 before:via-blue-100 before:to-violet-200 before:opacity-[6%] before:blur-2xl before:content-['']">
             <h2 className="mb-4 text-center text-3xl font-medium sm:mb-8 sm:text-4xl">
               Success stories
             </h2>
