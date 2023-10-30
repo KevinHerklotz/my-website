@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import ToolItem from './components/ToolItem'
-import Citation from './components/Citation'
-import Carousel from './components/Carousel'
-import ConnectButton from './components/ConnectButton'
+import ToolItem from './_components/ToolItem'
+import Citation from './_components/Citation'
+import Carousel from './_components/Carousel'
+import ConnectButton from './_components/ConnectButton'
 import backgroundImage from './_background/background.jpg'
-import ContentAlignmentContainer from './components/ContentAlignmentContainer'
+import ContentAlignmentContainer from './_components/ContentAlignmentContainer'
 
 export default function Home() {
   return (
