@@ -37,9 +37,9 @@ export default function Home() {
           </a>
         </div>
       </header>
-      <main className="text-xl font-light sm:text-2xl md:text-3xl">
-        {/* overflow-hidden is important for the bright gleam behind success stories */}
-        <div className="relative overflow-x-hidden">
+      {/* overflow-hidden is important for the bright gleam behind success stories */}
+      <main className="overflow-x-hidden text-xl font-light sm:text-2xl md:text-3xl">
+        <div className="relative">
           <Image
             src={backgroundImage}
             alt="background image mountains"

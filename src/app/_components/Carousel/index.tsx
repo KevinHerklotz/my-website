@@ -7,11 +7,21 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './styles.css'
+import { motion } from 'framer-motion'
 import ConnectButton from '../ConnectButton'
 
 export default function Carousel() {
   return (
-    <div className="rounded-2xl border-2 border-solid border-neutral-500 bg-opacity-30 pb-12 font-light">
+    <div className="relative pb-12 font-light">
+      <motion.span
+        className="absolute inset-0 bottom-0 top-0 rounded-2xl border-2 border-solid border-neutral-500 transition-all duration-75"
+        initial={{ left: -100, right: -100 }}
+        whileInView={{ left: 0, right: 0 }}
+        viewport={{
+          once: true,
+          amount: 0.05,
+        }}
+      />
       <Slider
         dots
         speed={300}
