@@ -38,7 +38,8 @@ export default function Home() {
         </div>
       </header>
       <main className="text-xl font-light sm:text-2xl md:text-3xl">
-        <div className="relative">
+        {/* overflow-hidden is important for the bright gleam behind success stories */}
+        <div className="relative overflow-x-hidden">
           <Image
             src={backgroundImage}
             alt="background image mountains"
@@ -112,8 +113,7 @@ export default function Home() {
               </ul>
             </section>
           </ContentAlignmentContainer>
-          {/* overflow-hidden is important for buggy Carousel */}
-          <section className="relative mt-8 max-w-full overflow-hidden before:absolute before:-inset-8 before:rounded-full before:bg-gradient-to-br before:from-yellow-700 before:via-blue-100 before:to-pink-100 before:opacity-5 before:blur-2xl before:content-['']">
+          <section className="relative mt-8 max-w-full before:absolute before:-inset-8 before:rounded-full before:bg-gradient-to-br before:from-yellow-700 before:via-blue-100 before:to-pink-100 before:opacity-5 before:blur-2xl before:content-['']">
             <h2 className="mb-4 text-center text-3xl font-medium sm:mb-8 sm:text-4xl">
               Success stories
             </h2>
