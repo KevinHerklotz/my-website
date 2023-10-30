@@ -5,38 +5,12 @@ import Carousel from './_components/Carousel'
 import ConnectButton from './_components/ConnectButton'
 import backgroundImage from './_background/background.jpg'
 import ContentAlignmentContainer from './_components/ContentAlignmentContainer'
+import Header from './_components/Header'
 
 export default function Home() {
   return (
     <div className="relative">
-      <header className="sticky top-0 z-20 -mb-10  h-10">
-        <div className="flex justify-end gap-2 pr-2 pt-2 opacity-80 invert">
-          <a
-            title="Email me"
-            href="mailto:hello@clean-code-kevin.ch"
-            target="_blank"
-            className="hover:opacity-70"
-          >
-            <Image src="/envelope-square.svg" alt="Email icon" width={22} height={22} />
-          </a>
-          <a
-            title="LinkedIn"
-            href="https://www.linkedin.com/in/kevin-herklotz-70407a153/"
-            className="hover:opacity-70"
-            target="_blank"
-          >
-            <Image src="/linkedin.svg" alt="Linkedin icon" width={22} height={22} />
-          </a>
-          <a
-            title="Github"
-            href="https://github.com/KevinHerklotz/"
-            className="hover:opacity-70"
-            target="_blank"
-          >
-            <Image src="/github.svg" alt="Github icon" width={22} height={22} />
-          </a>
-        </div>
-      </header>
+      <Header />
       {/* overflow-hidden is important for the bright gleam behind success stories */}
       <main className="overflow-x-hidden text-xl font-light sm:text-2xl md:text-3xl">
         <div className="relative">
@@ -53,7 +27,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mb-12 flex flex-col items-center justify-between gap-4 pb-4 sm:gap-8 sm:pb-16 md:gap-16">
-          <ContentAlignmentContainer className="z-30 px-8 text-center text-2xl sm:text-3xl md:text-4xl">
+          <ContentAlignmentContainer className="px-8 text-center text-2xl sm:text-3xl md:text-4xl">
             <p className="leading-normal">
               a dedicated <strong className="font-semibold">Senior Frontend Developer</strong> with
               11 years of experience in web development. I work as a{' '}
