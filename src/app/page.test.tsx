@@ -2,23 +2,12 @@ import React from 'react'
 
 import { render, screen } from '@testing-library/react'
 
+import { vi } from 'vitest'
 import Home from './page'
 
-describe('<Home />', () => {
-  describe('should not render a link twice to avoid a bad copy and paste and all links should be opened in new tab', () => {
-    render(<Home />)
-    const allLinks = screen.getAllByRole('link') as HTMLAnchorElement[]
-    const alreadyParsedLinks: Record<string, boolean> = {}
+vi.mock('next/image')
 
-    allLinks.forEach((linkElement) => {
-      it(`${linkElement.href}`, () => {
-        expect(linkElement.href).not.toContain('localhost')
-        expect(alreadyParsedLinks[linkElement.href]).toBeUndefined()
-        expect(linkElement.target).toBe('_blank')
-        alreadyParsedLinks[linkElement.href] = true
-      })
-    })
-  })
+describe('<Home />', () => {
   it('should render all the sections', () => {
     render(<Home />)
     screen.getByAltText(/picture of myself/i)
@@ -31,5 +20,21 @@ describe('<Home />', () => {
     screen.getByText(/Where I get my inspiration from/i)
     screen.getByText(/What others say about me/i)
     screen.getByText(/You need more infos/i)
+  })
+  describe('should not render a link twice to avoid a bad copy and paste and all links should be opened in new tab', () => {
+    const { unmount } = render(<Home />)
+    const allLinks = screen.getAllByRole('link') as HTMLAnchorElement[]
+    const alreadyParsedLinks: Record<string, boolean> = {}
+
+    allLinks.forEach((linkElement) => {
+      it(`${linkElement.href}`, () => {
+        expect(linkElement.href).not.toContain('localhost')
+        expect(alreadyParsedLinks[linkElement.href]).toBeUndefined()
+        expect(linkElement.target).toBe('_blank')
+        alreadyParsedLinks[linkElement.href] = true
+      })
+    })
+
+    unmount()
   })
 })

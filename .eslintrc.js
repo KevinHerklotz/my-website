@@ -41,11 +41,13 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.test.tsx'],
+      files: ['**/*.test.ts*'],
       plugins: ['vitest'],
       extends: ['plugin:testing-library/react', 'plugin:vitest/recommended'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
+        '@next/next/no-img-element': 'off',
+        'react/jsx-props-no-spreading': 'off',
         'vitest/expect-expect': [
           'error',
           {
