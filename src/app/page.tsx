@@ -31,8 +31,16 @@ export default function Home() {
             <p className="leading-normal">
               a dedicated <strong className="font-semibold">Senior Frontend Developer</strong> with
               11 years of experience in web development. I work as a{' '}
-              <strong className="font-semibold">Freelancer</strong> in Switzerland. I&apos;m very
-              experienced in e-commerce business, having worked for{' '}
+              <strong className="font-semibold">Freelancer</strong> in Switzerland
+              <Image
+                src="/flag-ch.svg"
+                alt="swiss flag"
+                className="mb-[0.2em] ml-[0.2em] mr-0.5 inline h-[0.7em] w-[0.7em] opacity-90"
+                width={1}
+                height={1}
+                priority
+              />
+              . I&apos;m very experienced in e-commerce business, having worked for{' '}
               <a
                 className="text-primary hover:text-orange-400"
                 href="https://www.ricardo.ch"
