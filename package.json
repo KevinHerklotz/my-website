@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "pnpm test && next build && pnpm check_links",
+    "build:local": " next build && next start",
     "check_links": "linkinator .next/server/app/index.html --timeout 2000 --retry-errors --skip '(\\.(svg|css|js|woff2|ico))|_next/image|www\\.ricardo\\.ch|www\\.linkedin\\.com|kentcdodds'",
     "start": "next start",
     "lint": "next lint",
@@ -24,6 +25,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-slick": "^0.29.0",
+    "sharp": "^0.32.6",
     "slick-carousel": "^1.8.1",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "^3.3.3",

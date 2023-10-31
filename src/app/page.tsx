@@ -19,6 +19,11 @@ export default function Home() {
             alt="background image mountains"
             priority
             placeholder="blur"
+            sizes="100vw" // https://nextjs.org/docs/pages/api-reference/components/image#responsive-image-using-a-static-import
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
           />
           <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent via-transparent to-background">
             <h1 className="text-center text-4xl font-medium [text-shadow:_0_0_10px_#000] sm:text-5xl md:text-7xl 2xl:text-9xl">
@@ -158,8 +163,8 @@ export default function Home() {
               <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">
                 Where I get my inspiration from
               </h2>
-              <ul className="text-left ">
-                <li className="flex">
+              <ul className="text-left">
+                <li className="align-to mb-0.5 flex">
                   <Image
                     src="/at-solid.svg"
                     alt="Internet icon"
@@ -180,7 +185,7 @@ export default function Home() {
                     </span>
                   </span>
                 </li>
-                <li className="flex align-top">
+                <li className="align-to mb-0.5 flex">
                   <Image
                     src="/youtube.svg"
                     alt="Youtube icon"
@@ -199,7 +204,7 @@ export default function Home() {
                     <span className="text-lg sm:text-2xl">(a TypeScript genius)</span>
                   </span>
                 </li>
-                <li className="flex align-top">
+                <li className="align-to mb-0.5 flex">
                   <Image
                     src="/youtube.svg"
                     alt="Youtube icon"
@@ -220,7 +225,7 @@ export default function Home() {
                     </span>
                   </span>
                 </li>
-                <li className="flex align-top">
+                <li className="align-to mb-0.5 flex">
                   <Image
                     src="/youtube.svg"
                     alt="Youtube icon"
@@ -239,7 +244,7 @@ export default function Home() {
                     <span className="text-lg sm:text-2xl">(the more humor the better)</span>
                   </span>
                 </li>
-                <li className="flex align-top">
+                <li className="align-to mb-0.5 flex">
                   <Image
                     src="/youtube.svg"
                     alt="Youtube icon"
@@ -258,7 +263,7 @@ export default function Home() {
                     <span className="text-lg sm:text-2xl">(very detailed tutorials)</span>
                   </span>
                 </li>
-                <li className="flex align-top">
+                <li className="align-to mb-0.5 flex">
                   <Image
                     src="/envelope.svg"
                     alt="Email icon"
@@ -276,7 +281,7 @@ export default function Home() {
                     </a>
                   </span>
                 </li>
-                <li className="flex align-top">
+                <li className="align-to mb-0.5 flex">
                   <Image
                     src="/envelope.svg"
                     alt="Email icon"
@@ -294,7 +299,7 @@ export default function Home() {
                     </a>
                   </span>
                 </li>
-                <li className="flex align-top">
+                <li className="align-to mb-0.5 flex">
                   <Image
                     src="/envelope.svg"
                     alt="Email icon"
@@ -312,7 +317,7 @@ export default function Home() {
                     </a>
                   </span>
                 </li>
-                <li className="flex align-top">
+                <li className="align-to mb-0.5 flex">
                   <Image
                     src="/book.svg"
                     alt="Book icon"
