@@ -10,7 +10,7 @@ const Header = () => {
           target="_blank"
           className="opacity-70 hover:opacity-90"
         >
-          <Image src="/envelope-square.svg" alt="Email icon" width={22} height={22} />
+          <Image src="/envelope-square.svg" alt="Email icon" width={22} height={22} priority />
         </a>
         <a
           title="LinkedIn"
@@ -18,7 +18,7 @@ const Header = () => {
           className="opacity-70 hover:opacity-90"
           target="_blank"
         >
-          <Image src="/linkedin.svg" alt="Linkedin icon" width={22} height={22} />
+          <Image src="/linkedin.svg" alt="Linkedin icon" width={22} height={22} priority />
         </a>
         <a
           title="Github"
@@ -26,7 +26,7 @@ const Header = () => {
           className="opacity-70 hover:opacity-90"
           target="_blank"
         >
-          <Image src="/github.svg" alt="Github icon" width={22} height={22} />
+          <Image src="/github.svg" alt="Github icon" width={22} height={22} priority />
         </a>
       </div>
     </header>
