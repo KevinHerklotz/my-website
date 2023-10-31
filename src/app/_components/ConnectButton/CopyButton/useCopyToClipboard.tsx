@@ -1,17 +1,28 @@
 // inspired by this hook: https://usehooks-ts.com/react-hook/use-copy-to-clipboard
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 type CopyState = 'success' | 'error' | null
 type CopyFn = (text: string) => void
 
-export function useCopyToClipboard(): [CopyState, CopyFn] {
+type Props = {
+  keepStateDuration?: number // in milliseconds
+}
+
+export function useCopyToClipboard({ keepStateDuration }: Props): [CopyState, CopyFn] {
   const [copyState, setCopyState] = useState<CopyState>(null)
+  const timeoutID = useRef<NodeJS.Timeout>()
 
   const copyFn: CopyFn = async (text) => {
     if (!navigator?.clipboard) {
       setCopyState('error')
       return
+    }
+
+    if (keepStateDuration) {
+      timeoutID.current = setTimeout(() => {
+        setCopyState(null)
+      }, keepStateDuration)
     }
 
     try {
@@ -21,6 +32,12 @@ export function useCopyToClipboard(): [CopyState, CopyFn] {
       setCopyState('error')
     }
   }
+
+  useEffect(() => {
+    return () => {
+      clearTimeout(timeoutID.current)
+    }
+  }, [])
 
   return [copyState, copyFn]
 }

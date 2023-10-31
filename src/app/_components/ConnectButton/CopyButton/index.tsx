@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 import { useCopyToClipboard } from './useCopyToClipboard'
 
 export default function CopyButton() {
-  const [copyState, copyFn] = useCopyToClipboard()
+  const [copyState, copyFn] = useCopyToClipboard({ keepStateDuration: 2000 })
   const supportsClipboard = !!navigator?.clipboard
 
   if (!supportsClipboard) return null
@@ -16,7 +16,7 @@ export default function CopyButton() {
     <Button
       size="sm"
       className={cn(
-        copyState === 'success' && 'hover:bg-green-600',
+        copyState === 'success' && 'bg-green-600 hover:bg-green-600',
         copyState === 'error' && 'bg-red-600'
       )}
       disabled={copyState === 'error'}
