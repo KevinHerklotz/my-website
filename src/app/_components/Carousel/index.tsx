@@ -14,9 +14,10 @@ export default function Carousel() {
   return (
     <div className="relative pb-12 font-light">
       <motion.span
-        className="absolute inset-0 bottom-0 top-0 rounded-2xl border-2 border-solid border-neutral-500 transition-all duration-75"
-        initial={{ left: -100, right: -100 }}
-        whileInView={{ left: 0, right: 0 }}
+        className="absolute inset-0 rounded-2xl border-2 border-solid border-neutral-500 transition-all duration-75"
+        initial={{ scale: 1.05 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.1, delay: 0.3 }}
         viewport={{
           once: true,
           amount: 0.05,
