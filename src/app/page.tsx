@@ -329,7 +329,7 @@ export default function Home() {
             </section>
           </ContentAlignmentContainer>
           <ContentAlignmentContainer>
-            <section className="rounded-2xl bg-gradient-to-br from-fuchsia-900 to-yellow-700 p-6 sm:p-10">
+            <section className="rounded-2xl bg-gradient-to-br from-fuchsia-900 to-yellow-700 p-6 sm:p-10 lg:text-center">
               <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">
                 What others say about me
               </h2>
