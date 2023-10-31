@@ -37,6 +37,7 @@ export default function Carousel() {
       >
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
+            <span className="md:hidden">1. </span>
             Optimizing costs and user experience
           </h3>
           <p className="text-justify">
@@ -50,6 +51,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
+            <span className="md:hidden">2. </span>
             Optimizing website performance and SEO
           </h3>
           <p className="text-justify">
@@ -63,6 +65,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
+            <span className="md:hidden">3. </span>
             Automatic error monitoring
           </h3>
           <p className="text-justify">
@@ -74,6 +77,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
+            <span className="md:hidden">4. </span>
             Enhancing testing infrastructure
           </h3>
           <p className="text-justify">
@@ -86,6 +90,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
+            <span className="md:hidden">5. </span>
             Automated Dead Code Detection
           </h3>
           <p className="text-justify">
@@ -98,6 +103,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
+            <span className="md:hidden">6. </span>
             Less bugs thanks to type safety
           </h3>
           <p className="text-justify">
@@ -110,6 +116,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
+            <span className="md:hidden">7. </span>
             Standardizing codebase for faster development
           </h3>
           <p className="text-justify">
@@ -123,6 +130,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
+            <span className="md:hidden">8. </span>
             Winning the Ricardo Hackathon
           </h3>
           <p className="text-justify">
