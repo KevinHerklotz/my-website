@@ -38,8 +38,7 @@ export default function Carousel() {
       >
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
-            <span className="md:hidden">1. </span>
-            Optimizing costs and user experience
+            💰 Optimizing costs and user experience
           </h3>
           <p className="text-justify">
             Given that Ricardo has millions of page views every day, excessive API requests from
@@ -52,8 +51,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
-            <span className="md:hidden">2. </span>
-            Optimizing website performance and SEO
+            📈 Optimizing website performance and SEO
           </h3>
           <p className="text-justify">
             I was constantly monitoring Ricardo's core web vitals, not only to ensure having great
@@ -66,8 +64,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
-            <span className="md:hidden">3. </span>
-            Automatic error monitoring
+            🚨 Automatic error monitoring
           </h3>
           <p className="text-justify">
             Earlier this year, I implemented Sentry for Ricardo, a crucial tool that monitors errors
@@ -78,8 +75,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
-            <span className="md:hidden">4. </span>
-            Enhancing testing infrastructure
+            ⚙️ Enhancing testing infrastructure
           </h3>
           <p className="text-justify">
             Following an intensive workshop with Kent C. Dodds, the creator of "Testing Library", my
@@ -91,8 +87,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
-            <span className="md:hidden">5. </span>
-            Automated Dead Code Detection
+            🕵️‍♂️ Automated Dead Code Detection
           </h3>
           <p className="text-justify">
             With hundreds of thousands of lines of code in Ricardo's frontend, I was looking for a
@@ -104,8 +99,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
-            <span className="md:hidden">6. </span>
-            Less bugs thanks to type safety
+            🐛 Less bugs thanks to type safety
           </h3>
           <p className="text-justify">
             Ricardo faced unpredictable bugs due to incorrect or missing types. To address this, I
@@ -117,8 +111,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
-            <span className="md:hidden">7. </span>
-            Standardizing codebase for faster development
+            🧑‍💻 Standardizing codebase for faster development
           </h3>
           <p className="text-justify">
             Managing 8 different "micro frontends" at Ricardo with 60'000 lines each posed a unique
@@ -131,8 +124,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
-            <span className="md:hidden">8. </span>
-            Winning the Ricardo Hackathon
+            🏆 Winning the Ricardo Hackathon
           </h3>
           <p className="text-justify">
             Ok, to be honest I took home the trophy in the "Funniest Contribution" category at the
@@ -142,7 +134,7 @@ export default function Carousel() {
             try to type "party" in{' '}
             <a
               href="https://www.ricardo.ch"
-              className="text-cyan-700 hover:opacity-70"
+              className="text-primary hover:text-orange-400"
               target="_blank"
               tabIndex={-1} // tabbing causes issues with the carousel
             >
@@ -153,7 +145,7 @@ export default function Carousel() {
         </div>
         <div className="p-6 sm:p-10">
           <h3 className="mb-4 text-center text-2xl font-medium sm:mb-8 sm:text-3xl">
-            Let's connect and elevate your next project
+            🤝 Let's connect and elevate your next project
           </h3>
           <p className="text-justify">
             As you've journeyed through my experiences and contributions, I appreciate your interest

@@ -23,7 +23,7 @@ export default function Citation({ quote, who }: CitationProps) {
         />
         &quot;{quote}&quot;
       </blockquote>
-      <figcaption className="-mt-1 mb-6 text-lg sm:mb-10 sm:text-2xl">({who})</figcaption>
+      <figcaption className="-mt-1 pb-6 text-lg sm:pb-10 sm:text-2xl">({who})</figcaption>
     </>
   )
 }

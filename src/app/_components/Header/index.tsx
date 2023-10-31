@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Header = () => {
   return (
-    <header className="relative z-20 -mb-10 h-10">
+    <header className="relative top-0 z-10 -mb-10 h-10 min-[1120px]:sticky min-[1120px]:invert">
       <div className="flex justify-end gap-2 pr-0.5 pt-0.5 xs:pr-2 xs:pt-2">
         <a
           title="Email me"

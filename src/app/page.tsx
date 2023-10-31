@@ -45,15 +45,16 @@ export default function Home() {
                 height={1}
                 priority
               />
-              . I&apos;m very experienced in e-commerce business, having worked for{' '}
+              . I am very proficient with large-scale applications, having worked for
+              Switzerland&apos;s biggest marketplace (
               <a
                 className="text-primary hover:text-orange-400"
                 href="https://www.ricardo.ch"
                 target="_blank"
               >
                 Ricardo
-              </a>{' '}
-              in Zug for more than 4 years.
+              </a>
+              ) for more than 4 years.
             </p>
           </ContentAlignmentContainer>
           <div className="relative my-8 flex place-items-center before:absolute before:-inset-10 before:rounded-full before:bg-gradient-to-b before:from-amber-600 before:via-transparent before:to-yellow-500 before:opacity-50 before:blur-3xl before:content-['']">
@@ -70,36 +71,27 @@ export default function Home() {
             <ConnectButton />
           </div>
           <ContentAlignmentContainer>
-            <section className="rounded-2xl bg-gradient-to-br from-yellow-700 to-fuchsia-900 p-6 sm:p-10">
-              <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">What I love</h2>
-              <ul className="pl-4 text-left -indent-4">
-                <li>
-                  I love <span className="font-medium">clean</span> code.
-                </li>
-                <li>
-                  I love to write meaningful <span className="font-medium">tests</span>.
-                </li>
-                <li>
-                  I love to do <span className="font-medium">reviews</span> (It helps me and others
-                  to grow).
-                </li>
-                <li>
-                  I love to set up and use <span className="font-medium">tools</span> that help to
-                  write better code.
-                </li>
-                <li>
-                  I love to think in the <span className="font-medium">user</span>&apos;s
-                  perspective.
-                </li>
-                <li>
-                  I love to work in a <span className="font-medium">team</span>.
-                </li>
-                <li>
-                  I love my <span className="font-medium">job</span>.
-                </li>
-              </ul>
+            <section className="rounded-2xl bg-gradient-to-br from-yellow-700 to-fuchsia-950 p-6 pb-4 sm:p-10 sm:pb-6 lg:text-center">
+              <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">Testimonials</h2>
+              <Citation
+                quote="Kevin knows perfectly how to balance between shipping fast and shipping clean."
+                who="Valentin, principal engineer and former colleague"
+              />
+              <Citation
+                quote="He is so effective, I suspect that they are 2 Kevins"
+                who="Benoît, senior developer and former colleague"
+              />
+              <Citation
+                quote="I would lead a war in the company to have you back as an engineer"
+                who="Jeremy, senior developer and my former manager"
+              />
+              <Citation
+                quote="Kevin is one of the best Frontend developers I ever worked with."
+                who="Maciej, senior developer and former colleague"
+              />
             </section>
           </ContentAlignmentContainer>
+
           <section className="relative mt-8 max-w-full before:absolute before:-inset-8 before:rounded-[15rem] before:bg-gradient-to-br before:from-pink-100 before:via-blue-100 before:to-violet-200 before:opacity-[6%] before:blur-2xl before:content-['']">
             <h2 className="mb-4 text-center text-3xl font-medium sm:mb-8 sm:text-4xl">
               Success stories
@@ -111,42 +103,27 @@ export default function Home() {
 
           <ContentAlignmentContainer>
             <section className="rounded-2xl bg-gradient-to-b from-[#1c2145] to-[#231430] p-6 text-center sm:p-10">
-              <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">Tools</h2>
-              <h3 className="mb-8 text-2xl font-medium sm:text-3xl">Tools I love the most</h3>
+              <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">My tech stack</h2>
+
               <ul className="flex flex-wrap justify-center gap-4">
                 <ToolItem name="TypeScript" href="https://www.typescriptlang.org/" />
-                <ToolItem name="tanstack/react-query" href="https://tanstack.com/query" />
-                <ToolItem name="(React) Testing Library" href="https://testing-library.com/" />
-                <ToolItem name="ESLint" href="https://eslint.org/" />
-              </ul>
-              <h3 className="mb-8 mt-16 text-2xl font-medium sm:text-3xl">Other tools I use</h3>
-              <ul className="flex flex-wrap justify-center gap-4">
-                <ToolItem name="Next.js" href="https://nextjs.org/" />
                 <ToolItem name="React" href="https://react.dev/" />
-                <ToolItem name="Redux" href="https://redux.js.org/" />
-                <ToolItem name="Babel" href="https://babeljs.io/" />
-                <ToolItem name="Storybook" href="https://storybook.js.org/" />
-                <ToolItem name="Material-UI" href="https://mui.com/" />
-                <ToolItem name="SCSS" href="https://sass-lang.com/" />
+                <ToolItem name="Next.js" href="https://nextjs.org/" />
                 <ToolItem name="Tailwind" href="https://tailwindcss.com/" />
+                <ToolItem name="SCSS" href="https://sass-lang.com/" />
+                <ToolItem name="tanstack/react-query" href="https://tanstack.com/query" />
+                <ToolItem name="Redux" href="https://redux.js.org/" />
+                <ToolItem name="Material-UI" href="https://mui.com/" />
                 <ToolItem name="Node.js" href="https://nodejs.org/" />
                 <ToolItem name="Express" href="https://expressjs.com/" />
-                <ToolItem name="axios" href="https://axios-http.com/" />
-                <ToolItem name="downshift" href="https://www.downshift-js.com/" />
                 <ToolItem name="Webpack" href="https://webpack.js.org/" />
                 <ToolItem name="Sentry" href="https://sentry.io/" />
+                <ToolItem name="Storybook" href="https://storybook.js.org/" />
+                <ToolItem name="ESLint" href="https://eslint.org/" />
                 <ToolItem name="Jest" href="https://jestjs.io/" />
                 <ToolItem name="Vitest" href="https://vitest.dev/" />
+                <ToolItem name="(React) Testing Library" href="https://testing-library.com/" />
                 <ToolItem name="Cypress" href="https://www.cypress.io/" />
-                <ToolItem name="depcheck" href="https://github.com/depcheck/depcheck" />
-                <ToolItem name="ts-prune" href="https://github.com/nadeesha/ts-prune" />
-                <ToolItem name="axe" href="https://github.com/dequelabs/axe-core" />
-                <ToolItem name="Asana" href="https://asana.com/" />
-                <ToolItem name="Notion" href="https://www.notion.so/" />
-                <ToolItem name="VSCode" href="https://code.visualstudio.com/" />
-                <ToolItem name="Github" href="https://github.com/KevinHerklotz" />
-                <ToolItem name="Google Analytics" href="https://analytics.google.com/" />
-                <ToolItem name="Launchdarkly" href="https://launchdarkly.com/" />
               </ul>
               <h3 className="mb-8 mt-16 text-2xl font-medium sm:text-3xl">
                 Tools I would love to use more regularly
@@ -342,26 +319,34 @@ export default function Home() {
             </section>
           </ContentAlignmentContainer>
           <ContentAlignmentContainer>
-            <section className="rounded-2xl bg-gradient-to-br from-fuchsia-900 to-yellow-700 p-6 sm:p-10 lg:text-center">
-              <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">
-                What others say about me
-              </h2>
-              <Citation
-                quote="He is so effective, I suspect that they are 2 Kevins"
-                who="Benoît, senior developer and former colleague"
-              />
-              <Citation
-                quote="Kevin knows perfectly how to balance between shipping fast and shipping clean."
-                who="Valentin, principal engineer and former colleague"
-              />
-              <Citation
-                quote="I would lead a war in the company to have you back as an engineer"
-                who="Jeremy, senior developer and my former manager"
-              />
-              <Citation
-                quote="Kevin is one of the best Frontend developers I ever worked with."
-                who="Maciej, senior developer and former colleague"
-              />
+            <section className="rounded-2xl bg-gradient-to-br from-fuchsia-900 to-yellow-700 p-6 sm:p-10">
+              <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">What I love</h2>
+              <ul className="pl-4 text-left -indent-4">
+                <li>
+                  I love <span className="font-medium">clean</span> code.
+                </li>
+                <li>
+                  I love to write meaningful <span className="font-medium">tests</span>.
+                </li>
+                <li>
+                  I love to do <span className="font-medium">reviews</span> (It helps me and others
+                  to grow).
+                </li>
+                <li>
+                  I love to set up and use <span className="font-medium">tools</span> that help to
+                  write better code.
+                </li>
+                <li>
+                  I love to think in the <span className="font-medium">user</span>&apos;s
+                  perspective.
+                </li>
+                <li>
+                  I love to work in a <span className="font-medium">team</span>.
+                </li>
+                <li>
+                  I love my <span className="font-medium">job</span>.
+                </li>
+              </ul>
             </section>
           </ContentAlignmentContainer>
           <ContentAlignmentContainer>

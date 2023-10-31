@@ -13,11 +13,11 @@ describe('<ConnectButton />', () => {
     expect(screen.queryByText(/LinkedIn/i)).not.toBeInTheDocument()
     expect(screen.queryByText(/email/i)).not.toBeInTheDocument()
     expect(screen.queryByText(/copy/i)).not.toBeInTheDocument()
-    expect(screen.queryByRole('dialog', { name: /Let's connect/i })).not.toBeInTheDocument()
+    expect(screen.queryByRole('dialog', { name: /Say hello/i })).not.toBeInTheDocument()
 
     await user.click(button)
 
-    await screen.findByRole('dialog', { name: /Let's connect/i })
+    await screen.findByRole('dialog', { name: /Say hello/i })
     const linkedInLink = screen.getByRole('link', { name: /LinkedIn/i })
     expect(linkedInLink).toHaveAttribute(
       'href',
