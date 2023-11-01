@@ -75,11 +75,11 @@ export default function Home() {
               <h2 className="mb-4 text-3xl font-medium sm:mb-8 sm:text-4xl">Testimonials</h2>
               <Citation
                 quote="Kevin knows perfectly how to balance between shipping fast and shipping clean."
-                who="Valentin, principal engineer and former colleague"
+                who="Valentin, principal engineer at Ricardo"
               />
               <Citation
                 quote="He is so effective, I suspect that they are 2 Kevins"
-                who="Benoît, senior developer and former colleague"
+                who="Benoît, senior developer at Ricardo"
               />
               <Citation
                 quote="I would lead a war in the company to have you back as an engineer"
@@ -87,7 +87,7 @@ export default function Home() {
               />
               <Citation
                 quote="Kevin is one of the best Frontend developers I ever worked with."
-                who="Maciej, senior developer and former colleague"
+                who="Maciej, senior developer at Ricardo"
               />
             </section>
           </ContentAlignmentContainer>
