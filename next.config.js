@@ -8,6 +8,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/meeting',
+        destination: 'https://calendly.com/kevinherklotz/45min',
+        permanent: false,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
