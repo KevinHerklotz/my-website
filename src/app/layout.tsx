@@ -7,8 +7,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-  title: 'Clean Code Kevin',
-  description: 'Freelance Senior Frontend Developer React Typescript',
+  title: 'Clean Code Kevin | Freelance Senior Frontend Developer',
+  description: 'Freelance Senior Frontend Developer React Typescript Switzerland for hire',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
