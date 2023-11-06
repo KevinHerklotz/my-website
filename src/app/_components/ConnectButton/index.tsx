@@ -23,7 +23,7 @@ export default function ConnectButton() {
           <span className="absolute inset-0 bg-white bg-gradient-to-br from-yellow-600 to-orange-600 transition-all group-hover:from-yellow-500 group-hover:to-orange-500" />
           {/* white gleam */}
           {isInView && (
-            <span className="animate-custom1 absolute inset-0 bg-gradient-to-br from-transparent from-45% via-white to-transparent to-55% opacity-0" />
+            <span className="absolute inset-0 animate-custom1 bg-gradient-to-br from-transparent from-45% via-white to-transparent to-55% opacity-0" />
           )}
           {/* actual content of button */}
           <span
