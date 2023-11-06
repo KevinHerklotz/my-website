@@ -57,7 +57,7 @@ export default function Home() {
               ) for more than 4 years.
             </p>
           </ContentAlignmentContainer>
-          <div className="relative my-8 flex place-items-center before:absolute before:-inset-10 before:rounded-full before:bg-gradient-to-b before:from-amber-600 before:via-transparent before:to-yellow-500 before:opacity-50 before:blur-3xl before:content-['']">
+          <div className="relative my-8 flex flex-col place-items-center before:absolute before:-inset-10 before:rounded-full before:bg-gradient-to-b before:from-amber-600 before:via-transparent before:to-yellow-500 before:opacity-50 before:blur-3xl before:content-['']">
             <Image
               src="https://avatars.githubusercontent.com/u/9254854"
               alt="picture of myself"
@@ -66,6 +66,7 @@ export default function Home() {
               height={250}
               priority
             />
+            <div className="mt-8">✅ Currently available</div>
           </div>
           <div className="mb-8">
             <ConnectButton />
