@@ -1,4 +1,7 @@
-import { Button } from '@/components/ui/button'
+'use client'
+
+import { useRef } from 'react'
+import { useInView } from 'framer-motion'
 import {
   Dialog,
   DialogContent,
@@ -9,12 +12,27 @@ import {
 import CopyButton from './CopyButton'
 
 export default function ConnectButton() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button size="lg" variant="default">
-          LET&apos;S CONNECT
-        </Button>
+        <button type="button" className="group relative overflow-hidden rounded-md p-0.5">
+          {/* border with gradient */}
+          <span className="absolute inset-0 bg-white bg-gradient-to-br from-yellow-600 to-orange-600 transition-all group-hover:from-yellow-500 group-hover:to-orange-500" />
+          {/* white gleam */}
+          {isInView && (
+            <span className="animate-custom1 absolute inset-0 bg-gradient-to-br from-transparent from-45% via-white to-transparent to-55% opacity-0" />
+          )}
+          {/* actual content of button */}
+          <span
+            className="relative block rounded-md bg-[#42351F] px-8 py-2 text-xl sm:p-3 sm:text-2xl"
+            ref={ref}
+          >
+            LET&apos;S CONNECT
+          </span>
+        </button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-xl">
         <DialogHeader>
