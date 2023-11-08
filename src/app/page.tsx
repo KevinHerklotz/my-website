@@ -6,6 +6,7 @@ import ConnectButton from './_components/ConnectButton'
 import backgroundImage from './_background/background.jpg'
 import ContentAlignmentContainer from './_components/ContentAlignmentContainer'
 import Header from './_components/Header'
+import Footer from './_components/Footer'
 
 export default function Home() {
   return (
@@ -370,6 +371,7 @@ export default function Home() {
           </ContentAlignmentContainer>
         </div>
       </main>
+      <Footer />
     </div>
   )
 }
