@@ -58,18 +58,20 @@ export default function Home() {
               ) for more than 4 years.
             </p>
           </ContentAlignmentContainer>
-          <div className="relative my-8 flex flex-col place-items-center before:absolute before:-inset-10 before:rounded-full before:bg-gradient-to-b before:from-amber-600 before:via-transparent before:to-yellow-500 before:opacity-50 before:blur-3xl before:content-['']">
+          <div className="relative flex flex-col place-items-center py-8 before:absolute before:-inset-10 before:rounded-full before:bg-gradient-to-b before:from-amber-600/70 before:via-amber-400/40 before:to-yellow-500/60 before:opacity-30 before:blur-3xl">
             <Image
               src="https://avatars.githubusercontent.com/u/9254854"
               alt="picture of myself"
-              className="border-1 h-40 w-40 rounded-full border-solid border-orange-900/25 drop-shadow-md sm:h-[250px] sm:w-[250px]"
+              className="h-40 w-40 rounded-full drop-shadow-md sm:h-[16rem] sm:w-[16rem]"
               width={250}
               height={250}
               priority
             />
-            <div className="mt-8">✅ Currently available</div>
           </div>
-          <div className="mb-8">
+          {/* there is an ugly bug in Chrome at about 1500px width, the negative margin looks better than
+              putting it inside the div above */}
+          <div className="-mt-16">✅ Currently available</div>
+          <div className="py-8">
             <ConnectButton />
           </div>
           <ContentAlignmentContainer>
