@@ -36,8 +36,7 @@ export default function Home() {
           <ContentAlignmentContainer className="px-8 text-center text-2xl sm:text-3xl md:text-4xl">
             <p className="leading-normal">
               a dedicated <strong className="font-semibold">Senior Frontend Developer</strong> with
-              11 years of experience in web development. I work as a{' '}
-              <strong className="font-semibold">Freelancer</strong> in Switzerland
+              11 years of experience in web development, living in Central Switzerland
               <Image
                 src="/flag-ch.svg"
                 alt="swiss flag"
