@@ -35,7 +35,7 @@ export default function Home() {
         <div className="mb-12 flex flex-col items-center justify-between gap-4 pb-4 sm:gap-8 sm:pb-16 md:gap-16">
           <ContentAlignmentContainer className="px-8 text-center text-2xl sm:text-3xl md:text-4xl">
             <p className="leading-normal">
-              a dedicated <strong className="font-semibold">Senior Frontend Developer</strong> with
+              a passionate <strong className="font-semibold">Senior Frontend Developer</strong> with
               11 years of experience in web development, living in Central Switzerland
               <Image
                 src="/flag-ch.svg"
