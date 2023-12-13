@@ -69,7 +69,7 @@ export default function Home() {
           </div>
           {/* there is an ugly bug in Chrome at about 1500px width, the negative margin looks better than
               putting it inside the div above */}
-          <div className="-mt-16">✅ Currently available</div>
+          <div className="-mt-4 md:-mt-12">✅ Currently available</div>
           <div className="py-8">
             <ConnectButton />
           </div>
