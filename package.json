@@ -16,7 +16,7 @@
     "test": "NODE_ENV=test pnpm vitest run && pnpm lint && pnpm knip"
   },
   "dependencies": {
-    "@radix-ui/react-dialog": "1.1.5",
+    "@radix-ui/react-dialog": "1.0.4",
     "@radix-ui/react-slot": "^1.1.1",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
