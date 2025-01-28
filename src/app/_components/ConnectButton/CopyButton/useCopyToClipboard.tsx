@@ -11,7 +11,7 @@ type Props = {
 
 export function useCopyToClipboard({ keepStateDuration }: Props): [CopyState, CopyFn] {
   const [copyState, setCopyState] = useState<CopyState>(null)
-  const timeoutID = useRef<NodeJS.Timeout>()
+  const timeoutID = useRef<NodeJS.Timeout>(undefined)
 
   const copyFn: CopyFn = async (text) => {
     if (!navigator?.clipboard) {
