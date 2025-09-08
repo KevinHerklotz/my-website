@@ -122,13 +122,13 @@ export default function Home() {
                 <ToolItem name="Material-UI" href="https://mui.com/" />
                 <ToolItem name="Node.js" href="https://nodejs.org/" />
                 <ToolItem name="Express" href="https://expressjs.com/" />
-                <ToolItem name="Webpack" href="https://webpack.js.org/" />
-                <ToolItem name="Sentry" href="https://sentry.io/" />
                 <ToolItem name="Storybook" href="https://storybook.js.org/" />
+                <ToolItem name="Vitepress" href="https://vitepress.dev/" />
+                <ToolItem name="Sentry" href="https://sentry.io/" />
                 <ToolItem name="ESLint" href="https://eslint.org/" />
                 <ToolItem name="Jest" href="https://jestjs.io/" />
                 <ToolItem name="Vitest" href="https://vitest.dev/" />
-                <ToolItem name="(React) Testing Library" href="https://testing-library.com/" />
+                <ToolItem name="React Testing Library" href="https://testing-library.com/docs/react-testing-library/intro/" />
                 <ToolItem name="Cypress" href="https://www.cypress.io/" />
               </ul>
               <h3 className="mb-8 mt-16 text-2xl font-medium sm:text-3xl">
