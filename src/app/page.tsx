@@ -9,6 +9,8 @@ import Header from './_components/Header'
 import Footer from './_components/Footer'
 
 export default function Home() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <div className="relative">
       <Header />
@@ -36,7 +38,8 @@ export default function Home() {
           <ContentAlignmentContainer className="px-8 text-center text-2xl sm:text-3xl md:text-4xl">
             <p className="leading-normal">
               a passionate <strong className="font-semibold">Senior Frontend Developer</strong> with
-              11 years of experience in web development, living in Central Switzerland
+              {" "}{currentYear - 2013} years of experience in web development, living in Central
+              Switzerland
               <Image
                 src="/flag-ch.svg"
                 alt="swiss flag"

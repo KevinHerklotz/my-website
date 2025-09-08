@@ -7,7 +7,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-  title: 'Clean Code Kevin | Freelance Senior Frontend Developer',
+  title: 'Clean Code Kevin | Senior Frontend Developer',
   description: 'Freelance Senior Frontend Developer React Typescript Switzerland for hire',
 }
 
